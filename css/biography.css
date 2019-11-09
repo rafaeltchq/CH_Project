@@ -1,0 +1,150 @@
+body{
+    width: auto;
+    background-color:#000000;
+    color: lightgray;
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    height: 100%;
+    text-align: center;
+  }
+  .header_nav {
+    width: 100%;
+  }
+  .thomyorke {
+    margin: 15px 0px;
+  }
+  .nav_text:link,
+  .footer_text:link {
+    color: white;
+    text-decoration: none;
+  }
+  .nav_text:visited,
+  .footer_text:visited {
+    color: white;
+  }
+  .nav_text:hover,
+  .footer_text:hover {
+    text-decoration: none;
+    color: #ff4e00;
+  }
+  .nav_text,
+  .nav_div {
+    margin: 0px 15px;
+    display: inline;
+    position: relative;
+  }
+  .discos {
+    border: 1px outset lightslategrey;
+    list-style-type: none;
+    width: 300px;
+    padding: 15px;
+    background-color: #000000;
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: auto;
+    text-align: left;
+  }
+  .nav_div:hover .discos {
+    color: #ff4e00;
+    display: block;
+}
+.personal_info,.images_block,.sec_intro {
+    margin-left: 25px;
+}
+.personal_info::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+/*.thom_main {
+    height: auto;
+    position: relative;
+}*/
+.bio_body,.thom_main {
+    width: 45%;
+    float: left;
+}
+.thom_main img {
+    height: auto;
+    max-width: 80%;
+    vertical-align: middle;
+}
+.bio_body {
+    padding-left: 50px;
+}
+.images_block {
+    text-align: center;
+}
+.personaldata_title,.intro_title,.quote_title  {
+    color: #FF4E00;
+    font-size: 1.8rem;
+    margin: 25px    0px;
+}
+.personal_data1     {
+    color: #FF4E00;
+    font-size: 1.8rem;
+}
+.personal_data,.personal_data,.intro,.intro_list  {
+    color: ghostwhite;
+    margin: 10px 0px;
+}
+.personal_data_list1        {
+    margin: 5px 0px 5px 20px;
+    list-style-type: circle;
+}
+.bio_title  {
+    font-size: 2.5rem;
+    margin: 25px    0px;
+    text-align: center;
+}
+.intro  {
+    margin: 30px 20px 25px 20px;
+    text-align: justify;
+}
+.images1   {
+    width: 350px;
+    height: auto;
+    margin: 0px 10px;
+}
+.main_footer    {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin: 20px 0px 10px 0px;
+}
+.footer_text {
+    margin: 0px 5px;
+  }
+.source_footer       {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 1;
+}
+/*.source_footer   {
+   ___Debería estar en el margen derecho inferior___ 
+    
+}*/
+blockquote  {
+    color: ghostwhite;
+    font-style: italic;
+    font-size: 2rem;
+    margin: 15px    0px 15px    25px;
+}
+#source:visited {
+    color: deepskyblue;
+}
+#source,.source_link    {
+    font-size: 1rem;
+}
+#source:link    {
+    color: deepskyblue;
+    text-decoration: none;
+}

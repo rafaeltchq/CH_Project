@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact for Thom Yorke Gigs</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="thomyorke">Thom Yorke</h1>
+        <nav class="header_nav">
+            <a class="nav_text" href="index.html">Home</a>
+            <a class="nav_text" href="gallery.html">Gallery</a>
+            <div class="nav_div">
+                <a class="nav_text" href="discography.html">Discography & Audio</a>
+                <ul class="discos">
+                    <li class="table_title">Anima (2019)</li>
+                    <li class="table_title">Suspiria (2018)</li>
+                    <li class="table_title">Tomorrow's Modern Boxes (2014)</li>
+                    <li class="table_title">The Eraser Rmxs (2007)</li>
+                    <li class="table_title">The Eraser (2006)</li>
+                </ul>
+            </div>
+            <a class="nav_text" href="biography.html">Biography</a>
+            <a class="nav_text" href="tours.html">Tours</a>
+        </nav>
+    </header>
+    <p class="span_title"><span class="span_bold">If you want to contact Thom Yorke's Manager...</span> please, submit
+        this form:</p>
+    <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset id="contact">
+            <div class="contact_info">
+                <h2 class="form_title">Contact Information</h2>
+                <div class="name_data">
+                    <label for="booking_name" class="form_data">Your Name:
+                        <input type="text" name="booking_name" class="form_fld" placeholder="  Name*" required></label>
+                    <label for="booking_surname" class="form_data">Your Surname:
+                        <input type="text" name="booking_surname" class="form_fld" placeholder="  Surame*"
+                            required></label>
+                    <label for="phone" class="form_data">Your Phone Number:
+                        <input class="form_fld" type="tel" name="phone" placeholder="  Phone Number*" required></label>
+                    <label for="email" class="form_data">Your Email:
+                        <input class="form_fld" type="email" name="email" placeholder="  Email Address*"
+                            required></label>
+                    <label for="company" class="form_data">Your Company Name:
+                        <input class="form_fld" type="text" name="company" placeholder="  Company Name"></label>
+                </div>
+                <div class="contact_ways">
+                    <label for="contact_ways" class="contact_ways_title">Which way do you like us tocontact you?</label>
+                    <div class="chckboxes">
+                        <label for="via_email" class="chckbx_name">
+                            <input type="checkbox" name="via_email" value="via_email" class="checkbox_ctc"> By
+                            Email</label>
+                        <label for="via_phone" class="chckbx_name">
+                            <input type="checkbox" name="via_phone" value="via_phone" class="checkbox_ctc"> By
+                            Phone</label>
+                        <label for="via_meeting" class="chckbx_name">
+                            <input type="checkbox" name="via_meeting" value="via_meeting" class="checkbox_ctc"> Via
+                            Skype</label>
+                    </div>
+                </div>
+            </div>
+            <div class="budget_info">
+                <h2 class="form_title">Event Information</h2>
+                <div class="budget_data">
+                    <label class="form_data" for="budget">Approximate Budget:
+                        <input class="form_fld" type="number" name="budget" placeholder="  GB Pounds"></label>
+                    <label class="form_data" for="event_date">Event Date:
+                        <input class="form_fld" type="date" name="event_date"></label>
+                    <label class="form_data" for="event_type">Event Type:
+                        <select class="form_fld" name="event_type">
+                            <optgroup label="Event Type">
+                                <option value>Select event type</option>
+                                <option value="corporate_funtion">Corporate Funtion</option>
+                                <option value="private_party">Private Party</option>
+                                <option value="radio_station">Radio Station Promotion</option>
+                                <option value="independient_promoter">Independient Promoter</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select></label>
+                    <label class="form_data" for="attendees_number">Number of Attendees:
+                        <input class="form_fld" type="number" name="attendees"
+                            placeholder="  Number of Attendees"></label>
+                    <label class="form_data" for="event_location">Event Location:
+                        <input class="form_fld" type="text" name="event_location"
+                            placeholder="  Event Location"></label>
+                </div>
+                <label class="form_cmmt" for="about_event">Comments:
+                    <textarea name="about_event" placeholder="  Tell us about your event"></textarea></label>
+            </div>
+            <div id="send_bttn">
+                <input type="submit" name="submit" value="Submit Request" class="bttns">
+                <input type="reset" class="bttns" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+    <div>
+        <p>
+            Want to talk about your event now?<br>
+            Give us a call and one of our booking agents will be happy to help you immediately.
+        </p>
+        <a href="tel:020-5555-4444">(020) 5555-4444</a>
+    </div>
+    <footer class="main_footer">
+        <a class="footer_text" href="http://www.facebook.com" title="Facebook" target="_blank">Facebook</a>
+        <a class="footer_text" href="http://www.twitter.com" title="Twitter" target="_blank">Twitter</a>
+        <a class="footer_text" href="index.html" title="Home">Back to Home...</a>
+    </footer>
+</body>
+
+</html>
