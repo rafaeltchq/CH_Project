@@ -1,0 +1,139 @@
+body {
+  width: auto;
+  background-color: #000000;
+  color: lightgray;
+  margin: 0px;
+  font-size: 25px;
+  font-family: "BebasNeueRegular";
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  height: 100%;
+  text-align: center;
+}
+.header_nav {
+  width: 100%;
+}
+.thomyorke {
+  margin: 15px 0px;
+}
+.nav_text:link,
+.footer_text:link {
+  color: white;
+  text-decoration: none;
+}
+.nav_text:visited,
+.footer_text:visited {
+  color: white;
+}
+.nav_text:hover,
+.footer_text:hover {
+  text-decoration: none;
+  color: #ff4e00;
+}
+.nav_text,
+.nav_div {
+  margin: 0px 15px;
+  display: inline;
+  position: relative;
+}
+.discos {
+  border: 1px outset lightslategrey;
+  list-style-type: none;
+  width: 300px;
+  padding: 15px;
+  background-color: #000000;
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  z-index: auto;
+  text-align: left;
+}
+.nav_div:hover .discos {
+  color: #ff4e00;
+  display: block;
+}
+.main_footer {
+  margin: 20px 0px 10px 0px;
+}
+.footer_text {
+  margin: 0px 5px;
+}
+/*Hasta acá el nav y footer se repite*/
+/*@media screen and (max-width: 900px) {
+  .slide_table {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+}*/
+.thom_title {
+  color: white;
+  text-align: center;
+}
+.slide_table {
+  overflow:hidden;
+  width:100%;
+  height: 600px;
+  margin:5px auto;
+  border: 0;
+}
+.table_body {
+  width: 16.6667%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  float:left; 
+}
+.slider {
+  position:relative;
+  width:600%;
+  margin:0;
+  left:0;
+  text-align:left;
+  animation:25s slideshow infinite
+}
+@keyframes slideshow {
+	5% {left: 0;}
+	10% {left: 0;}
+	20% {left: -100%;}
+	30% {left: -100%;}
+	40% {left: -200%;}
+	50% {left: -200%;}
+	60% {left: -300%;}
+	70% {left: -300%;}
+	80% {left: -400%;}
+	90% {left: -400%;}
+	100% {left: -500%;}
+}
+.tab_title {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+.table_img {
+  vertical-align: middle;
+  display: inline-block;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.table_tracklist {
+  vertical-align: middle;
+  margin: 0 0 0 30px;
+  width: auto;
+  display: inline-block;
+}
+.table_tracklist ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+.table_tracklist,
+.table_released {
+  font-size: 1.5rem;
+}
