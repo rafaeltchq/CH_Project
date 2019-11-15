@@ -48,7 +48,7 @@ header {
   position: absolute;
   top: 5px;
   left: 0px;
-  z-index: auto;
+  z-index: 2;
   text-align: left;
 }
 .nav_div:hover .discos {
@@ -56,6 +56,7 @@ header {
   display: block;
 }
 .main_footer {
+  text-align: center;
   margin: 20px 0px 10px 0px;
 }
 .footer_text {
@@ -102,6 +103,9 @@ header {
 	90% {left: -400%;}
 	100% {left: -500%;}
 }
+/*.slider:hover {
+  animation-play-state: paused;
+}*/
 .tab_title {
   margin: 0;
   padding: 20px 0;

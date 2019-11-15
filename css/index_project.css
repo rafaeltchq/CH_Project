@@ -57,6 +57,7 @@ header {
 }
 .main_footer {
   margin: 20px 0px 10px 0px;
+  text-align: center;
 }
 .footer_text {
   margin: 0px 5px;
@@ -81,6 +82,8 @@ img {
 .player {
   display: block;
   position: fixed;
+  border: 0;
+  margin: 0;
   bottom: 20px;
   right: 20px;
 }
