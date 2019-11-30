@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Thom Yorke Official Site</title>
-    <link rel="stylesheet" href="css/index_project.css" />
+    <link rel="stylesheet" href="scss/index_project.css" />
     <link
       rel="stylesheet"
       media="screen"
@@ -19,7 +19,13 @@
   <body>
     <header>
       <h1 class="thomyorke">Thom Yorke</h1>
-      <nav class="header_nav">
+      <nav class="header_nav" role="navigation">
+        <div class="toggle_menu">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="nav_menu">
         <a class="nav_text" href="index.html">Home</a>
         <a class="nav_text" href="gallery.html">Gallery</a>
         <div class="nav_div">
@@ -34,6 +40,8 @@
         </div>
         <a class="nav_text" href="biography.html">Biography</a>
         <a class="nav_text" href="tours.html">Tours</a>
+      </div>
+      </div>
       </nav>
     </header>
       <div class="new_album_block">

@@ -1,0 +1,235 @@
+body {
+  width: auto;
+  background-color: #000000;
+  color: lightgray;
+  margin: 0px;
+  font-size: 25px;
+  font-family: "BebasNeueRegular";
+  font-weight: normal;
+  font-style: normal;
+  display: grid;
+  grid-template-areas:
+    "Header Header"
+    "Album Album"
+    "Video Video"
+    "Form Form"
+    "Footer Footer";
+}
+header {
+  grid-area: Header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  height: auto;
+}
+/*.main_body {
+    grid-area: Main;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 15px;
+}*/
+.header_nav {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  flex-wrap: wrap;
+}
+.thomyorke {
+  margin: 15px 0px;
+}
+.nav_text:link,
+.footer_text:link {
+  color: white;
+  text-decoration: none;
+}
+.nav_text:visited,
+.footer_text:visited {
+  color: white;
+}
+.nav_text:hover,
+.footer_text:hover {
+  text-decoration: none;
+  color: #ff4e00;
+}
+.nav_text,
+.nav_div {
+  margin: 0px 15px;
+  display: inline;
+  position: relative;
+}
+.discos {
+  border: 1px outset lightslategrey;
+  list-style-type: none;
+  width: 300px;
+  padding: 15px;
+  background-color: #000000;
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  z-index: auto;
+  text-align: left;
+}
+.nav_div:hover .discos {
+  color: #ff4e00;
+  display: block;
+}
+.main_footer {
+  grid-area: Footer;
+  margin: 20px 0px 10px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.footer_text {
+  margin: 0px 5px;
+}
+.album_title,
+.video_title {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.new_album_block {
+  grid-area: Album;
+  text-align: center;
+}
+.video_block {
+  grid-area: Video;
+  text-align: center;
+}
+img {
+  height: 500px;
+  width: auto;
+
+  margin: 0;
+}
+.form_block {
+  grid-area: Form;
+}
+.ytube {
+  height: 250px;
+  width: 500px;
+  margin: 20px 0px;
+}
+
+.player {
+  grid-area: Spoty;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.player iframe {
+  height: 80px;
+  width: 300px;
+}
+.signup_title {
+  margin: 0px 5px;
+}
+.signup_data {
+  height: 20px;
+  width: 200px;
+  border-radius: 4px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.form_sct {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+legend {
+  margin: 10px 0px;
+}
+.bttns {
+  height: 30px;
+  width: fit-content;
+  margin: 20px 10px;
+  font: inherit;
+  background-color: ghostwhite;
+  font-size: 1.5rem;
+}
+.legend_form {
+  color: white;
+}
+@media screen and (max-width: 780px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "Header Spoty Spoty"
+      "Header Album Album"
+      "Video Video Video"
+      "Form Form Form"
+      "Footer Footer Footer";
+    font-size: 0.85rem;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+  }
+  .main_body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 70%;
+  }
+  .header_nav {
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
+  }
+
+  .nav_text,
+  .nav_div {
+    margin: 2px 15px;
+    display: block;
+  }
+  .discos {
+    position: static;
+    border: 0;
+    margin: 0;
+    width: auto;
+    padding: 5px;
+    color: #ff4e00;
+    display: block;
+    text-align: left;
+  }
+  .nav_div .nav_text {
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .player {
+    text-align: center;
+    position: static;
+  }
+  .player iframe {
+    max-width: auto;
+    height: 80px;
+  }
+  .ytube {
+    height: 100%;
+    max-width: 100%;
+    margin: 20px 0px;
+  }
+  .form_sct div {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  .form_sct div label {
+    padding: 5px 0;
+  }
+  #subscribe {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
