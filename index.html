@@ -279,7 +279,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="validationTooltipUsername"
+                id="validationTooltipUsername" style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;"
                 aria-describedby="validationTooltipUsernamePrepend"
                 required
               />
@@ -291,23 +291,25 @@
         </div>
 
         <div class="form-row justify-content-center m-0">
-          <div class="col-md-3">
-            <label
-              for="validationTooltip04"
-              class="text-light"
-              style="font-size: 1.5rem;"
-              >Choose frecuency of updates</label
-            >
-            <select class="custom-select" id="validationTooltip04" required>
-              <option selected disabled value="">Frecuency...</option>
-              <option>Daily</option>
-              <option>Weekly</option>
-              <option>Monthly</option>
-            </select>
-            <div class="invalid-tooltip">
-              Please select a value.
+            <div class="col-md-5">
+              <label
+                for="validationTooltip04"
+                class="text-light"
+                style="font-size: 1.5rem;"
+                >Choose frecuency of updates</label
+              >
+              <select class="custom-select" id="validationTooltip04" required>
+                <option selected disabled value="">Frecuency...</option>
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Monthly</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a value.
+              </div>
             </div>
           </div>
+        <div class="form-row justify-content-center m-0">
           <button
             class="btn btn-outline-secondary btn-lg mt-5 mb-1 ml-4 py-0"
             type="submit"
