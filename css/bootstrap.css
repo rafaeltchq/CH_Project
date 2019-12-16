@@ -4532,6 +4532,7 @@ input[type="button"].btn-block {
     padding: 6px 0;
     margin: none;
     text-align: center;
+    font-size: 1.5rem !important;
   }
 }
 
