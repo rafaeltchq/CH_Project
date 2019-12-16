@@ -13,57 +13,69 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.css" />
   <link rel="stylesheet" href="css/bootstrap-grid.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background-color: #000000;">
-      <a class="navbar-brand text-secundary font-weight-bold py-0" style="font-size: 2.5rem;" href="index.html">Thom
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background-color: #2b241d;">
+      <a class="navbar-brand text-secundary font-weight-bold py-0" style="font-size: 2.2rem;" href="index.html">Thom
         Yorke</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!--<div class="d-lg-none">
-      <div class="dropleft">
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="far fa-user-circle"></span>
-          </button>
-          
-        
-      <form class="dropdown-menu justify-content-end p-1 bg-dark">
-          <div class="form-group">
-              <label for="validationTooltip01" class="text-light">Name:</label>
-            <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="Thom Yorke">
-          </div>
-          <div class="form-group">
-            <label for="validationTooltipUsername" class="text-light">Email:</label>
-            <input type="email" class="form-control" id="exampleDropdownFormPassword2" placeholder="name@example.com">
-          </div>
-          <button type="submit" class="btn btn-secundary text-light">Sign up</button>
-        </form>
-      </div>
-    </div>-->
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="font-size: 1.5rem;">
-          <li class="nav-item">
-            <a class="nav-link text-light" href="gallery.html">Gallery</a>
+        <div class="d-flex flex-row toggle-menu">
+          <ul class="navbar-nav mt-lg-0" style="font-size: 1.5rem;">
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3 p-0" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3 p-0" href="discography.html">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3 p-0" href="biography.html">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3 p-0" href="tours.html">Tour</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-footer">
+        <ul class="navbar-nav mt-lg-0 justify-content-center">
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-spotify nav-link p-0" href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+              title="Spotify" target="_blank"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="discography.html">Discography</a>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073"
+              title="Apple Music" target="_blank"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light " href="biography.html">Biography</a>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
+              target="_blank"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="tours.html">Tours</a>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
+              title="Facebook m-1" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ"
+              title="YouTube" target="_blank"></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="jumbotron jumbotron-fluid bg-dark text-center mt-3">
+  <div class="jumbotron jumbotron-fluid bg-dark text-center mt-4">
     <div class="container col-md-6 px-0">
       <h1 class="text-light h2">NEW ALBUM "ANIMA" OUT NOW</h1>
       <img src="img/thom-yorke-anima.jpeg" class="img-fluid " alt="Responsive image" />
@@ -195,14 +207,7 @@
       </div>
     </nav>
   </footer>
-  <!--<footer class="nav">
-    <a class="" href="http://www.facebook.com" title="Facebook" target="_blank">Facebook</a>
-    <a class="footer_text" href="http://www.twitter.com" title="Twitter" target="_blank">Twitter</a>
-    <a class="footer_text" href="contact.html" target="_blank">Contact</a>
-    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:4CvTDPKA6W06DRfBnZKrau&size=basic&theme=light"
-      width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-      allowtransparency="true"></iframe>
-  </footer>-->
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
