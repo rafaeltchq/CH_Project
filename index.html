@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#937F6A">
+    <meta name="theme-color" content="#937F6A" />
     <title>Thom Yorke Official Site</title>
     <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
@@ -74,14 +74,10 @@
         >
         <svg
           class="ham hamRotate ham1"
+          id="burger"
           viewBox="0 0 100 100"
           width="50"
           onclick="this.classList.toggle('active')"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <path
             class="line top"
@@ -107,8 +103,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>-->
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo">
           <!--<div class="d-flex flex-row toggle-menu"></div>-->
+    
           <ul class="navbar-nav especial toggle-menu justify-content-center">
             <li class="nav-item">
               <a
@@ -322,8 +319,10 @@
       </form>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-center" id="rafaelch" >
-      <div class="nav-item px-auto text-success mb-2" style="font-size: 1rem;">Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin</div>
+    <footer class="d-flex flex-wrap justify-content-center" id="rafaelch">
+      <div class="nav-item px-auto text-success mb-2" style="font-size: 1rem;">
+        Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+      </div>
       <!--<nav class="nav flex-colunm flex-sm-row justify-content-center mt-4 mb-2">
         <div class="nav justify-content-center">
           <a
@@ -387,8 +386,14 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
+      $(document).ready(function() {
+        $("#burger").click(function() {
+          $("#navbarTogglerDemo").slideToggle(300);
+        });
+      });
       var especial = $(".especial");
       $("#fotos").hover(
         function() {
@@ -396,7 +401,7 @@
         },
         function() {
           colorSwitch("#000000");
-        },
+        }
       );
       $("#musica").hover(
         function() {
@@ -404,7 +409,7 @@
         },
         function() {
           colorSwitch("#000000");
-        },
+        }
       );
       $("#bio").hover(
         function() {
@@ -412,7 +417,7 @@
         },
         function() {
           colorSwitch("#000000");
-        },
+        }
       );
       $("#gira").hover(
         function() {
@@ -420,7 +425,7 @@
         },
         function() {
           colorSwitch("#000000");
-        },
+        }
       );
       function colorSwitch(color) {
         $("body").css("background-color", color);
@@ -428,14 +433,14 @@
         $(".navbar-dark").css("background-color", color);
       }
       especial.css("font-size", "1.5rem");
-      
-          $("#bio,#gira,#fotos,#musica").hover(function() {
-            $(this).animate({ fontSize : "1.7rem" }, 300);
+
+      $("#bio,#gira,#fotos,#musica").hover(
+        function() {
+          $(this).animate({ fontSize: "1.7rem" }, 300);
         },
         function() {
           $(this).animate({ fontSize: "1.5rem" }, 300);
         }
-
       );
     </script>
   </body>
