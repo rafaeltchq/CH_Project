@@ -171,7 +171,21 @@
         </nav>
     </header>
 
-    <div class="container px-0" style="margin-top: 60px;">
+    <div class="hidden-poster container-fluid p-0">
+        <img src="img/TY-cover.jpg" alt="Thom Yorke" class="img-fluid" style="min-width: 100%; height: auto; opacity: 0.6;">
+        <div class="section-mobile">
+            <img src="img/thom-02-02.png" alt="Thom Logo" class="img-fluid-80">
+            <p>
+                <a href="#anima">
+                    <i class="fa fa-chevron-down" style="font-size: larger; color: darkgray; margin-top: 30px;"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="container px-0 carrusel">
+        <div class="text-center">
+            <h1 class="text-light h2">Tours</h1>
+        </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -210,11 +224,11 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <div class="jumbotron jumbotron-fluid text-center mt-2" style="background-color: transparent;">
+        <div id="anima"></div>
+        <div class="jumbotron jumbotron-fluid text-center mt-4" style="background-color: transparent;">
             <div class="container col-md-6 px-0">
                 <h1 class="text-light h2">NEW ALBUM "ANIMA" OUT NOW</h1>
-                <img src="img/thom-yorke-anima.jpeg" class="img-fluid " alt="Responsive image" />
+                <img src="img/thom-yorke-anima.jpeg" class="img-fluid" alt="Responsive image" />
                 <hr class="my-2" />
 
                 <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Buy it!</a
@@ -224,7 +238,7 @@
 
       <div class="container px-0 mt-5 px-lg-5">
         <div class="text-center">
-          <h1 class="text-light">TRAFFIC - ANIMA</h1>
+          <h1 class="text-light h2">TRAFFIC - ANIMA</h1>
         </div>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe
@@ -397,7 +411,7 @@
       var especial = $(".especial");
       $("#fotos").hover(
         function() {
-          colorSwitch("#18100D");
+          colorSwitch("#A25227");
         },
         function() {
           colorSwitch("#000000");
@@ -405,7 +419,7 @@
       );
       $("#musica").hover(
         function() {
-          colorSwitch("#37271A");
+          colorSwitch("#83705F");
         },
         function() {
           colorSwitch("#000000");
@@ -421,7 +435,7 @@
       );
       $("#gira").hover(
         function() {
-          colorSwitch("#2B241D");
+          colorSwitch("#332A25");
         },
         function() {
           colorSwitch("#000000");
