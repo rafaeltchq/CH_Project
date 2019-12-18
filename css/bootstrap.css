@@ -508,6 +508,11 @@ mark,
     height: auto;
 }
 
+.img-fluid-80 {
+    max-width: 80%;
+    height: auto;
+}
+
 .img-thumbnail {
     padding: 0.25rem;
     background-color: #fff;
@@ -4791,6 +4796,24 @@ input[type="button"].btn-block {
     #rafaelch {
         margin-bottom: 35px;
     }
+    .hidden-poster {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .carrusel {
+        margin-top: 60px;
+        order: 2;
+    }
+    .section-mobile {
+        position: absolute;
+        min-width: 100%;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -4835,6 +4858,9 @@ input[type="button"].btn-block {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .hidden-poster {
+        display: none !important;
     }
 }
 
