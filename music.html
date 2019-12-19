@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#83705F" />
+    <title>Music - Thom Yorke Official Site</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+    <style type="text/css">
+        .ham {
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 300ms;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .hamRotate.active {
+            transform: rotate(45deg);
+        }
+        
+        .hamRotate180.active {
+            transform: rotate(180deg);
+        }
+        
+        .line {
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #6c757d;
+            stroke-width: 5.5;
+            stroke-linecap: round;
+        }
+        
+        .ham1 .top {
+            stroke-dasharray: 40 139;
+        }
+        
+        .ham1 .bottom {
+            stroke-dasharray: 40 180;
+        }
+        
+        .ham1.active .top {
+            stroke-dashoffset: -98px;
+        }
+        
+        .ham1.active .bottom {
+            stroke-dashoffset: -138px;
+        }
+        
+        .container-sroll {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 8vh;
+        }
+        
+        .anima {
+            background-image: url("img/thom-yorke-anima.jpeg");
+        }
+        
+        .suspiria {
+            background-image: url("img/thom-yorke-suspiria-1200.jpg");
+        }
+        
+        .modern-boxes {
+            background-image: url("img/thom-yorke-tomorrows-modern-boxes.jpg");
+        }
+        
+        .eraser-rmxs {
+            background-image: url("img/thim-yorke-the-eraser-rmxs.jpg");
+        }
+        
+        .eraser {
+            background-image: url("img/thom-yorke-the-eraser.png");
+        }
+        
+        .left-block {
+            position: relative;
+            min-width: 100%;
+            height: calc(100vh - 55px - 35px);
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+        
+        .right-block {
+            position: relative;
+            min-width: 100%;
+            height: calc(100vh - 55px - 35px);
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+        
+        @media (max-width: 991.98px) {
+            .right-side,
+            .left-side {
+                position: absolute;
+                left: 50%;
+                top: 5%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .ham,
+            .line,
+            .ham1,
+            .hidden-lg {
+                display: none;
+            }
+            .container-sroll {
+                margin-top: 8vh;
+            }
+            .left-block {
+                min-width: 100%;
+                height: calc(100vh - 55px - 40px);
+                margin: 5px 0;
+                background-size: 40%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: 15% 50%;
+            }
+            .right-side {
+                max-width: 50%;
+                margin-left: auto;
+                padding: 20px 0px;
+                text-align: center;
+            }
+            .right-block {
+                min-width: 100%;
+                height: calc(100vh - 55px - 40px);
+                margin: 5px 0;
+                background-size: 40%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: 85% 50%;
+            }
+            .left-side {
+                max-width: 50%;
+                margin-right: auto;
+                padding: 20px 0px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body style="height: auto;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background-color: #000000; transition: 300ms ease-out;">
+            <a class="navbar-brand text-secundary font-weight-bold py-0" style="font-size: 2.2rem;" href="index.html">Thom Yorke</a
+        >
+        <svg
+          class="ham hamRotate ham1"
+          id="burger"
+          viewBox="0 0 100 100"
+          width="50"
+          onclick="this.classList.toggle('active')"
+        >
+          <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
+
+        <!-- Bootstrap Toggler disable
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo">
+          <!--<div class="d-flex flex-row toggle-menu"></div>-->
+
+          <ul class="navbar-nav especial toggle-menu justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="gallery.html"
+                id="fotos"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="discography.html"
+                id="musica"
+                >Music</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="biography.html"
+                id="bio"
+                >Biography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="tours.html"
+                id="gira"
+                >Tour</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-footer">
+          <ul class="navbar-nav mt-lg-0 justify-content-center">
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+              <a
+                class="fab fa-spotify nav-link p-0"
+                href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+                title="Spotify"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073" title="Apple Music" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250" title="Facebook m-1" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ" title="YouTube" target="_blank"></a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-sroll">
+        <h1 class="text-center h1 hidden-lg text-light">Discography</h1>
+        <div class="left-block anima">
+            <div class="bg-cover right-side">
+                <h1 class="text-light h1 text-center">Anima (2019)</h1>
+                <iframe src="https://open.spotify.com/embed/album/1g4vEVvVVFvFju0gS0DMbh" width="320" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media" class="playlist-right text-center"></iframe>
+            </div>
+        </div>
+        <div class="right-block suspiria">
+            <div class="bg-cover left-side">
+                <h1 class="text-light h1 text-center">Suspiria (2018)</h1>
+                <iframe src="https://open.spotify.com/embed/album/0nZg85VbGkPcr7zQ6EsJKa" width="320" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="left-block modern-boxes">
+            <div class="bg-cover right-side">
+                <h1 class="text-light h1 text-center">
+                    Tomorrow's Modern Boxes (2014)
+                </h1>
+                <iframe src="https://open.spotify.com/embed/album/3FGqqmmClj3E1mzyaNpU6k" width="320" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="right-block eraser-rmxs">
+            <div class="bg-cover left-side">
+                <h1 class="text-light h1 text-center">The Eraser Rmxs (2007)</h1>
+                <iframe src="https://open.spotify.com/embed/album/0K78rF0ziljfWqb1BtXyFB" width="320" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="left-block eraser">
+            <div class="bg-cover right-side">
+                <h1 class="text-light h1 text-center">The Eraser (2006)</h1>
+                <iframe src="https://open.spotify.com/embed/album/4QSIeDnAnGag2YZ5DjB2eB" width="320" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-center" id="rafaelch">
+        <div class="nav-item px-auto text-DARK mb-2" style="font-size: 1rem;">
+            Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+        </div>
+        <!--<nav class="nav flex-colunm flex-sm-row justify-content-center mt-4 mb-2">
+        <div class="nav justify-content-center">
+          <a
+            class="flex-sm-fill text-sm-center nav-link text-light p-0 mx-4"
+            style="font-size: 1.8rem;"
+            href="http://www.facebook.com"
+            title="Facebook"
+            target="_blank"
+            >Facebook</a
+          >
+          <a
+            class="flex-sm-fill text-sm-center nav-link text-light p-0 mx-4"
+            style="font-size: 1.8rem;"
+            href="http://www.twitter.com"
+            title="Twitter"
+            target="_blank"
+            >Twitter</a
+          >
+          <a
+            class="flex-sm-fill text-sm-center nav-link text-light p-0 mx-4"
+            style="font-size: 1.8rem;"
+            href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+            title="Spotify"
+            target="_blank"
+            >Spotify</a
+          >
+          <a
+            class="flex-sm-fill text-sm-center nav-link text-light p-0 mx-4"
+            style="font-size: 1.8rem;"
+            href="contact.html"
+            target="_blank"
+            >Contact</a
+          >
+        </div>
+        <div class="flex-sm-fill text-sm-center nav-link p-0 pl-5 pt-2">
+          <iframe
+            src="https://open.spotify.com/follow/1/?uri=spotify:artist:4CvTDPKA6W06DRfBnZKrau?si=hXuxEOiQRQCqLfjqk1Me5Q&size=basic&theme=dark"
+            width="200"
+            height="35"
+            scrolling="no"
+            frameborder="0"
+            style="border:none; overflow:hidden;"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+      </nav>-->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $("body").css("background-color", "#83705F");
+        $(".navbar-nav").css("background-color", "#83705F");
+        $(".navbar-dark").css("background-color", "#83705F");
+        $(document).ready(function() {
+            $("#burger").click(function() {
+                $("#navbarTogglerDemo").slideToggle(300);
+            });
+        });
+        var especial = $(".especial");
+        $("#fotos").hover(
+            function() {
+                colorSwitch("#A25227");
+            },
+            function() {
+                colorSwitch("#83705F");
+            }
+        );
+        $("#musica").hover(
+            function() {
+                colorSwitch("#83705F");
+            },
+            function() {
+                colorSwitch("#83705F");
+            }
+        );
+        $("#bio").hover(
+            function() {
+                colorSwitch("#773C1A");
+            },
+            function() {
+                colorSwitch("#83705F");
+            }
+        );
+        $("#gira").hover(
+            function() {
+                colorSwitch("#332A25");
+            },
+            function() {
+                colorSwitch("#83705F");
+            }
+        );
+
+        function colorSwitch(color) {
+            $("body").css("background-color", color);
+            $(".navbar-nav").css("background-color", color);
+            $(".navbar-dark").css("background-color", color);
+        }
+        especial.css("font-size", "1.5rem");
+
+        $("#bio,#gira,#fotos,#musica").hover(
+            function() {
+                $(this).animate({
+                        fontSize: "1.7rem"
+                    },
+                    300
+                );
+            },
+            function() {
+                $(this).animate({
+                        fontSize: "1.5rem"
+                    },
+                    300
+                );
+            }
+        );
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("a").on("click", function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("html, body").animate({
+                            scrollTop: $(hash).offset().top
+                        },
+                        800,
+                        function() {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
