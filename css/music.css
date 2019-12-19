@@ -1,0 +1,99 @@
+.container-sroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 8vh;
+}
+
+.anima {
+    background-image: url("../img/thom-yorke-anima.jpeg");
+}
+
+.suspiria {
+    background-image: url("../img/thom-yorke-suspiria-1200.jpg");
+}
+
+.modern-boxes {
+    background-image: url("../img/thom-yorke-tomorrows-modern-boxes.jpg");
+}
+
+.eraser-rmxs {
+    background-image: url("../img/thim-yorke-the-eraser-rmxs.jpg");
+}
+
+.eraser {
+    background-image: url("../img/thom-yorke-the-eraser.png");
+}
+
+.left-block {
+    position: relative;
+    min-width: 100%;
+    height: calc(100vh - 55px - 35px);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.right-block {
+    position: relative;
+    min-width: 100%;
+    height: calc(100vh - 55px - 35px);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+@media (max-width: 991.98px) {
+    .right-side,
+    .left-side {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-sroll {
+        margin-top: 8vh;
+    }
+    .left-block {
+        min-width: 100%;
+        height: calc(100vh - 55px - 40px);
+        margin: 5px 0;
+        background-size: 40%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 15% 50%;
+    }
+    .right-side {
+        max-width: 50%;
+        margin-left: auto;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .right-block {
+        min-width: 100%;
+        height: calc(100vh - 55px - 40px);
+        margin: 5px 0;
+        background-size: 40%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 85% 50%;
+    }
+    .left-side {
+        max-width: 50%;
+        margin-right: auto;
+        padding: 20px 0px;
+        text-align: center;
+    }
+}
