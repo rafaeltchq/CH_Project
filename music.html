@@ -6,13 +6,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#756d54"/>
+    <meta name="theme-color" content="#4d2600"/>
     <title>Music - Thom Yorke Official Site</title>
     <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-reboot.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/music.min.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
     <style type="text/css">
         .ham {
@@ -56,64 +57,7 @@
         .ham1.active .bottom {
             stroke-dashoffset: -138px;
         }
-        
-        .container-sroll {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin-top: 8vh;
-        }
-        
-        .anima {
-            background-image: url("img/thom-yorke-anima.jpeg");
-        }
-        
-        .suspiria {
-            background-image: url("img/thom-yorke-suspiria-1200.jpg");
-        }
-        
-        .modern-boxes {
-            background-image: url("img/thom-yorke-tomorrows-modern-boxes.jpg");
-        }
-        
-        .eraser-rmxs {
-            background-image: url("img/thim-yorke-the-eraser-rmxs.jpg");
-        }
-        
-        .eraser {
-            background-image: url("img/thom-yorke-the-eraser.png");
-        }
-        
-        .left-block {
-            position: relative;
-            min-width: 100%;
-            height: calc(100vh - 55px - 35px);
-            background-size: 100%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: 10px center;
-        }
-        
-        .right-block {
-            position: relative;
-            min-width: 100%;
-            height: calc(100vh - 55px - 35px);
-            background-size: 100%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: 10px center;
-        }
-        
-        @media (max-width: 991.98px) {
-            .right-side,
-            .left-side {
-                position: absolute;
-                left: 50%;
-                top: 5%;
-                transform: translateX(-50%);
-                z-index: 1;
-            }
-        }
+    
         
         @media (min-width: 992px) {
             .ham,
@@ -122,40 +66,7 @@
             .hidden-lg {
                 display: none;
             }
-            .container-sroll {
-                margin-top: 8vh;
-            }
-            .left-block {
-                min-width: 100%;
-                height: calc(100vh - 55px - 40px);
-                margin: 5px 0;
-                background-size: 40%;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-position: 15% 50%;
-            }
-            .right-side {
-                max-width: 50%;
-                margin-left: auto;
-                padding: 20px 0px;
-                text-align: center;
-            }
-            .right-block {
-                min-width: 100%;
-                height: calc(100vh - 55px - 40px);
-                margin: 5px 0;
-                background-size: 40%;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-position: 85% 50%;
-            }
-            .left-side {
-                max-width: 50%;
-                margin-right: auto;
-                padding: 20px 0px;
-                text-align: center;
-            }
-        }
+ 
     </style>
 </head>
 
