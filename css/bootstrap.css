@@ -4802,8 +4802,7 @@ input[type="button"].btn-block {
         width: 100%;
     }
     .carrusel {
-        margin-top: 60px;
-        order: 2;
+        margin-bottom: 1.5rem;
     }
     .section-mobile {
         position: absolute;
@@ -4813,6 +4812,13 @@ input[type="button"].btn-block {
         transform: translateX(-50%);
         z-index: 1;
         text-align: center;
+    }
+    .reorder {
+        display: flex;
+        flex-direction: column;
+    }
+    .reorder div:first-child {
+        order: 3;
     }
 }
 
