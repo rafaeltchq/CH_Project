@@ -4755,7 +4755,11 @@ input[type="button"].btn-block {
     padding: 0.5rem 1rem;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    text-decoration: none;
+    color: var(--warning);
+}
+
 .nav-link:focus {
     text-decoration: none;
 }
@@ -6864,7 +6868,7 @@ a.close.disabled {
     -ms-flex-pack: end;
     -webkit-box-pack: end;
     justify-content: flex-end;
-    padding: 0.75rem;
+    padding: 0.5rem;
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(0.3rem - 1px);
     border-bottom-left-radius: calc(0.3rem - 1px);

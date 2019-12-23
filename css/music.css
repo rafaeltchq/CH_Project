@@ -60,6 +60,21 @@
                 transform: translateX(-50%);
         z-index: 1;
     }
+    .hidden-mobile {
+        display: none;
+    }
+    .hidden-lg {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .post {
+        padding: 1rem 0 2rem 0;
+    }
 }
 
 @media (min-width: 992px) {
