@@ -3,199 +3,414 @@
 <!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Biography - Thom Yorke Official Site</title>
-    <link rel="stylesheet" href="css/biography.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#787878" />
+  <title>Biography - Thom Yorke Official Site</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <style type="text/css">
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 300ms;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: #6c757d;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham1 .top {
+      stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+      stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+      stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+      stroke-dashoffset: -138px;
+    }
+
+    @media (min-width: 992px) {
+
+      .ham,
+      .line,
+      .ham1 {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1 class="thomyorke">Thom Yorke</h1>
-        <nav class="header_nav">
-            <a class="nav_text" href="index.html">Home</a>
-            <a class="nav_text" href="gallery.html">Gallery</a>
-            <div class="nav_div">
-                <a class="nav_text" href="discography.html">Discography & Audio</a>
-                <ul class="discos">
-                    <li class="table_title">Anima (2019)</li>
-                    <li class="table_title">Suspiria (2018)</li>
-                    <li class="table_title">Tomorrow's Modern Boxes (2014)</li>
-                    <li class="table_title">The Eraser Rmxs (2007)</li>
-                    <li class="table_title">The Eraser (2006)</li>
-                </ul>
-            </div>
-            <a class="nav_text" href="biography.html">Biography</a>
-            <a class="nav_text" href="tours.html">Tours</a>
-        </nav>
-    </header>
-    <p class="bio_title">Thom Yorke's Biography</p>
-    <div class="personal_info">
-        <div class="bio_body">
-            <p class="personal_data"><span class="personaldata_title">Nick Name: </span>Tchock, Tchoky, Dr. Tchock</p>
-            <p class="personal_data"><span class="personaldata_title">Birthday: </span>October 7, 1968</p>
-            <p class="personal_data"><span class="personaldata_title">Nationality: </span>British</p>
-            <p class="personal_data"><span class="personaldata_title">Age: </span>51 years</p>
-            <p class="personal_data"><span class="personaldata_title">Sun sign: </span>Libra</p>
-            <p class="personal_data"><span class="personaldata_title">Also known as: </span>Thomas Edward Yorke</p>
-            <p class="personal_data"><span class="personaldata_title">Born in: </span>Wellingborough, Northamptonshire,
-                England</p>
-            <p class="personal_data"><span class="personaldata_title">Famous as: </span>Singer, musician, songwriter</p>
-            <p class="personal_data"><span class="personaldata_title">Height: </span>5´55" (165cm)</p>
-            <dl class="personal_data_list1">
-                <dt class="personal_data1">Family:</dt>
-                <dd class="personal_data"><span class="personaldata_title">Spouse/Ex: </span>Rachel Owen</dd>
-                <dd class="personal_data"><span class="personaldata_title">Children: </span>Agnes Yorke, Noah Yorke</dd>
-            </dl>
-            <p class="personal_data"><span class="personaldata_title">Personality: </span>INFP (Introversion, Intuition,
-                Feeling, Perception)</p>
-            <p class="personal_data"><span class="personaldata_title">Diseases & Disabilities: </span>Depression, Visual
-                Impairment</p>
-            <p class="personal_data"><span class="personaldata_title">Ideology: </span>Environmentalists</p>
-        </div>
-        <div    class="thom_main">
-            <img src="img/Thom-Yorke-755x1069.jpg" alt="Thom Yorke Main">
-        </div>
-        <div class="clear"></div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
+      style="background-color: #000000; transition: 300ms ease-out;">
+      <a class="navbar-brand text-secundary font-weight-bold py-0 mx-2" style="font-size: 2.2rem;"
+        href="index.html">Thom Yorke</a>
+      <svg class="ham hamRotate ham1" id="burger" viewBox="0 0 100 100" width="50"
+        onclick="this.classList.toggle('active')">
+        <path class="line top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
+
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo">
+        <!--<div class="d-flex flex-row toggle-menu"></div>-->
+
+        <ul class="navbar-nav especial toggle-menu justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="videos.html" id="fotos">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="music.html" id="musica">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="#" id="bio">Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="tours.html" id="gira">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="contact.html" id="contacto">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-footer">
+        <ul class="navbar-nav mt-lg-0 justify-content-center">
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-spotify nav-link p-0" href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+              title="Spotify" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073"
+              title="Apple Music" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
+              title="Facebook m-1" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ"
+              title="YouTube" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <h2 class="text-light h2 text-center mb-0" style="margin-top: 50px;">Thom Yorke's Biography</h2>
+  <div class="container-fluid d-lg-inline-flex mt-4 text-center">
+
+    <div class="ml-lg-4">
+      <img class="img-fluid" style="max-height: 680px;" src="img/Thom-Yorke-755x1069.jpg" alt="Thom Yorke Main">
     </div>
-    <p class="intro"> A versatile English musician, Thom Yorke is a multifaceted artistbestknown as the vocalist,
-        songwriter and pianist of the rock band Radiohead. Apart fromplaying thepiano, he is also an expert at playing
-        the drum and the bass guitar. Consideredone of the mostinfluential singers of the contemporary era, Yorke’s
-        debut solo album, ‘TheEraser’ receivedimmense critical and commercial success, which catapulted him to
-        instantstardom. As the leadsinger of ‘Atoms of Peace’, he was recognised as one of the mostinfluential figures
-        of music andwas included in Rolling Stone's "100 Greatest Artists ofAll Time". Yorke was born with a
-        visualimpairment and underwent almost five surgeries,which restored his eyesight. These ailments didnot deter
-        his spirits and soon enough, hetransformed himself into a cult figure and a youthicon. His popularity and fame
-        alsobrought out the environmentalist and humanitarian in him as hehas spoken about various social and
-        contemporary issues.</p>
-    <div class="images_block">
-        <img src="img/thom-yorke-4.jpg" alt="Thom Yorke" class="images1">
-        <img src="img/thom-yorke-5.jpg" alt="Thom Yorke" class="images1">
-        <img src="img/thom-yorke-6.jpg" alt="Thom Yorke" class="images1">
+    <div class="ml-3 my-0 text-left">
+      <p class="h3 text-light"><span class="h2 text-warning">Nick Name: </span>Tchock, Tchoky, Dr. Tchock</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Birthday: </span>October 7, 1968</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Nationality: </span>British</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Age: </span>51 years</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Sun sign: </span>Libra</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Also known as: </span>Thomas Edward Yorke</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Born in: </span>Wellingborough, Northamptonshire,
+        England</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Famous as: </span>Singer, musician, songwriter</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Height: </span>5´55" (165cm)</p>
+      <dl class="">
+        <dt class="h2 text-light">Family:</dt>
+        <dd class="h3 text-light"><span class="h2 text-warning">- Spouse/Ex: </span>Rachel Owen</dd>
+        <dd class="h3 text-light"><span class="h2 text-warning">- Children: </span>Agnes Yorke, Noah Yorke</dd>
+      </dl>
+      <p class="h3 text-light"><span class="h2 text-warning">Personality: </span>INFP (Introversion, Intuition,
+        Feeling, Perception)</p>
+      <p class="h3 text-light"><span class="h2 text-warning">Diseases & Disabilities: </span>Depression, Visual
+        Impairment</p>
+      <p class="h3 text-light mb-0"><span class="h2 text-warning">Ideology: </span>Environmentalists</p>
     </div>
-    <div class="sec_intro">
-        <div>
-            <p class="intro_title">Childhood & Early Life</p>
-            <ul>
-                <li class="intro_list">
-                    Thom Yorke was born in Wellingborough, Northamptonshire, England. He started playing the guitar at
-                    the age of seven and formed his first band at the age of ten.
-                </li>
-                <li class="intro_list">
-                    Born with a visual impairment, Yorke had to undergo several surgeries as a youngster and was often
-                    made fun of by his classmates, due to his surgical scars.
-                </li>
-                <li class="intro_list">
-                    He attended the Abington School for Boys along with fellow guitarist, Ed O’Brien and bassist, Colin
-                    Greenwood. They later formed the band, ‘Friday’.
-                </li>
-            </ul>
-        </div>
-        <div class="quote1">
-            <p class="quote_title">Quote: </p>
-            <blockquote cite="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php">
-                <q>I want to be alone and I Want people to notice me - both at the same time</q> - Thom Yorke
-            </blockquote>
-        </div>
-        <div>
-            <p class="intro_title">Carrer</p>
-            <ul>
-                <li class="intro_list">
-                    He was the lead singer and song writer of the band and they included Phil Selway as the drummer and
-                    Jonny as the harmonica player, keyboardist and guitarist. However, the band temporarily split, till
-                    they reunited to record a series of demo tapes.
-                </li>
-                <li class="intro_list">
-                    One of these tapes, ‘Manic Hedgehog’, drew the attention of a recording company,EMI, who signed the
-                    group in 1991 for a ‘six album deal’. The following year,the band was renamed ‘Radiohead.
-                </li>
-                <li class="intro_list">
-                    In 1992, EMI released the debut EP of Radiohead and "Creep", the album’s single became Radiohead's
-                    first charting hit on the Billboard countdown.
-                </li>
-                <li class="intro_list">
-                    In 1995, their second album, ‘The Bends’, was released and earned them greatcritical acclaim and
-                    success. The album was ranked No.110 on the list of "500Greatest Albums of All-Time" list.
-                </li>
-                <li class="intro_list">
-                    They released their next album, ‘OK Computer’ in 1997, which catapulted them tointernational
-                    stardom. The album climbed to the No.1 position on the UK albumcharts, which put more pressure on
-                    the band to come up with a follow-up hit.
-                </li>
-                <li class="intro_list">
-                    Their 2003 album, ‘Hail to the Thief’, reflected the apocalyptic post-9/11world. After their
-                    contract with EMI expired, the band took a decision whichallowed their fans to decide the amount
-                    they wanted to pay for the copy of the2007 album, ‘Rainbows’.
-                </li>
-                <li class="intro_list">
-                    In 2009, he worked on a parallel project with Flea, the bassist of Red Hot Chili Peppers and
-                    long-time Radiohead producer, Nigel Godrich.
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p class="intro_title">Major Works</p>
-            <ul>
-                <li class="intro_list">
-                    ‘The Eraser’, his debut solo album, was released on 10th July, 2006. The albumclimbed to the #3
-                    position on the UK Albums Chart and was ranked #2 on theBillboard 200 in the United States, selling
-                    over 90,000 copies in its firstweek. It was nominated for both the Mercury Music Prize as well as
-                    the GrammyAward for Best Alternative Music Album in 2007.
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p class="intro_title">Awards & Achievements</p>
-            <ul>
-                <li class="intro_list">
-                    Rolling Stone ranked Yorke No. 66 on its list of "100 Greatest Singers of All Time" and was referred
-                    to as ‘one of the most influential singers of his generation.
-                </li>
-                <li class="intro_list">
-                    One of the albums of Radiohead, ‘OK Computer’ was ranked 17th in Classic Rock Magazine’s list of the
-                    ’30 greatest concept albums of all time’.
-                </li>
-            </ul>
-        </div>
-        <div class="quote2">
-            <p class="quote_title">Quote: </p>
-            <blockquote cite="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php">
-                <q>We don't have to stand on a soap-box and preach because hopefully we're channelling it through the
-                    new record.</q> - Thom Yorke
-            </blockquote>
-        </div>
-        <div>
-            <p class="intro_title">Personal Life & Legacy</p>
-            <ul>
-                <li class="intro_list">
-                    Currently, he lives in Oxfordshire, near his hometown, with his long-time partner Rachel Owen, whom
-                    he met while studying at Exeter University. They havetwo children, Noah and Agnes.
-                </li>
-                <li class="intro_list">
-                    An ardent environmentalist, he supported the Friends of the Earth's climate change campaign, "The
-                    Big Ask."
-                </li>
-            </ul>
-        </div>
+
+    <!--<div class="clear"></div>-->
+  </div>
+  <div class="container-fluid justify-content-center h3 text-light my-3 px-lg-5"
+    style="font-family: 'Oswald', sans-serif; line-height: 2.5rem;">
+    <p>A versatile English musician, Thom Yorke is a multifaceted artist best known as the vocalist, songwriter and
+      pianist of the rock band Radiohead. Apart from playing the piano, he is also an expert at playing the drum and the
+      bass guitar. Considered one of the most influential singers of the contemporary era, Yorke’s debut solo album,
+      ‘The Eraser’ received immense critical and commercial success, which catapulted him to instant stardom. As the
+      lead singer of ‘Atoms of Peace’, he was recognised as one of the most influential figures of music and was
+      included in Rolling Stone's "100 Greatest Artists of All Time". Yorke was born with a visual impairment and
+      underwent almost five surgeries, which restored his eyesight. These ailments did not deter his spirits and soon
+      enough, he transformed himself into a cult figure and a youth icon. His popularity and fame also brought out the
+      environmentalist and humanitarian in him as he has spoken about various social and contemporary issues.</p>
+  </div>
+  <div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-stage-outer">
+      <div class="owl-stage">
+        <div class="owl-item"><img class="img-fluid" src="img/thom-yorke-4.jpg" alt="Thom Yorke"></div>
+        <div class="owl-item"><img class="img-fluid" src="img/thom-yorke-5.jpg" alt="Thom Yorke"></div>
+        <div class="owl-item"><img class="img-fluid" src="img/thom-yorke-6.jpg" alt="Thom Yorke"></div>
+        <div class="owl-item"><img class="img-fluid" src="img/thomyorke_20191226_1.png" alt="Thom Yorke"></div>
+        <div class="owl-item"><img class="img-fluid" src="img/thomyorke_20191226_10.png" alt="Thom Yorke"></div>
+        <div class="owl-item"><img class="img-fluid" src="img/myxomhead_20191226_12.png" alt="Thom Yorke"></div>
+      </div>
     </div>
-    <footer class="main_footer">
-        <div class="social_footer">
-            <a class="footer_text" href="http://www.facebook.com" title="Facebook" target="_blank">Facebook</a>
-            <a class="footer_text" href="http://www.twitter.com" title="Twitter" target="_blank">Twitter</a>
-            <a class="footer_text" href="contact.html" target="_blank">Contact</a>
-            <iframe
-                src="https://open.spotify.com/follow/1/?uri=spotify:artist:4CvTDPKA6W06DRfBnZKrau&size=basic&theme=light"
-                width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-                allowtransparency="true"></iframe>
-        </div>
-        <div class="source_footer">
-            <span class="source_link">(Source: </span><a
-                href="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php" id="source"
-                target="_blank">https://www.thefamouspeople.comprofiles/</a><span class="source_link">)</span>
-        </div>
-    </footer>
+  </div>
+
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Childhood & Early Life</p>
+    <ul>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        Thom Yorke was born in Wellingborough, Northamptonshire, England. He started playing the guitar at
+        the age of seven and formed his first band at the age of ten.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        Born with a visual impairment, Yorke had to undergo several surgeries as a youngster and was often
+        made fun of by his classmates, due to his surgical scars.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        He attended the Abington School for Boys along with fellow guitarist, Ed O’Brien and bassist, Colin
+        Greenwood. They later formed the band, ‘Friday’.
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Quote: </p>
+    <blockquote class="h3 text-light" style="font-family: 'Oswald', sans-serif;" cite="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php">
+      <q>I want to be alone and I Want people to notice me - both at the same time</q> - Thom Yorke
+    </blockquote>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Carrer</p>
+    <ul>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        He was the lead singer and song writer of the band and they included Phil Selway as the drummer and
+        Jonny as the harmonica player, keyboardist and guitarist. However, the band temporarily split, till
+        they reunited to record a series of demo tapes.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        One of these tapes, ‘Manic Hedgehog’, drew the attention of a recording company,EMI, who signed the
+        group in 1991 for a ‘six album deal’. The following year,the band was renamed ‘Radiohead.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        In 1992, EMI released the debut EP of Radiohead and "Creep", the album’s single became Radiohead's
+        first charting hit on the Billboard countdown.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        In 1995, their second album, ‘The Bends’, was released and earned them greatcritical acclaim and
+        success. The album was ranked No.110 on the list of "500Greatest Albums of All-Time" list.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        They released their next album, ‘OK Computer’ in 1997, which catapulted them tointernational
+        stardom. The album climbed to the No.1 position on the UK albumcharts, which put more pressure on
+        the band to come up with a follow-up hit.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        Their 2003 album, ‘Hail to the Thief’, reflected the apocalyptic post-9/11world. After their
+        contract with EMI expired, the band took a decision whichallowed their fans to decide the amount
+        they wanted to pay for the copy of the2007 album, ‘Rainbows’.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        In 2009, he worked on a parallel project with Flea, the bassist of Red Hot Chili Peppers and
+        long-time Radiohead producer, Nigel Godrich.
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5"> 
+    <p class="h2 text-left text-warning">Major Works</p>
+    <ul>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        ‘The Eraser’, his debut solo album, was released on 10th July, 2006. The albumclimbed to the #3
+        position on the UK Albums Chart and was ranked #2 on theBillboard 200 in the United States, selling
+        over 90,000 copies in its firstweek. It was nominated for both the Mercury Music Prize as well as
+        the GrammyAward for Best Alternative Music Album in 2007.
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Awards & Achievements</p>
+    <ul>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        Rolling Stone ranked Yorke No. 66 on its list of "100 Greatest Singers of All Time" and was referred
+        to as ‘one of the most influential singers of his generation.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        One of the albums of Radiohead, ‘OK Computer’ was ranked 17th in Classic Rock Magazine’s list of the
+        ’30 greatest concept albums of all time’.
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Quote: </p>
+    <blockquote class="h3 text-light" style="font-family: 'Oswald', sans-serif;" cite="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php">
+      <q>We don't have to stand on a soap-box and preach because hopefully we're channelling it through the
+        new record.</q> - Thom Yorke
+    </blockquote>
+  </div>
+  <div class="container-fluid mt-5 px-lg-5">
+    <p class="h2 text-left text-warning">Personal Life & Legacy</p>
+    <ul>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        Currently, he lives in Oxfordshire, near his hometown, with his long-time partner Rachel Owen, whom
+        he met while studying at Exeter University. They havetwo children, Noah and Agnes.
+      </li>
+      <li class="h3 text-light" style="font-family: 'Oswald', sans-serif;">
+        An ardent environmentalist, he supported the Friends of the Earth's climate change campaign, "The
+        Big Ask."
+      </li>
+    </ul>
+  </div>
+
+  <footer class="d-flex flex-column text-center" id="rafaelch">
+    <div class="nav-item px-auto text-light mb-1" style="font-size: 1rem;">
+      <span class="text-light">(Source: </span><a
+      href="https://www.thefamouspeople.com/profiles/thomas-edward-yorke-3003.php"
+      target="_blank" class="text-light">www.thefamouspeople.com</a><span class="text-light">)</span>
+    </div>
+    <div class="nav-item px-auto text-light mb-1" style="font-size: 1rem;">
+      Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+    </div>
+    <div class="nav-item px-auto text-light mb-1" style="font-size: 0.75rem;">
+      All content is for educational use only
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+    $("body,.navbar-dark,.navbar-nav").css("background-color", "#4d1a00");
+    $(document).ready(function () {
+      $("#burger").click(function () {
+        $("#navbarTogglerDemo").slideToggle(300);
+      });
+    });
+    var especial = $(".especial");
+    $("#fotos").hover(
+      function () {
+        colorSwitch("#cc4400");
+      },
+      function () {
+        colorSwitch("#4d1a00");
+      }
+    );
+    $("#musica").hover(
+      function () {
+        colorSwitch("#993300");
+      },
+      function () {
+        colorSwitch("#4d1a00");
+      }
+    );
+    $("#bio").hover(
+      function () {
+        colorSwitch("#4d1a00");
+      },
+      function () {
+        colorSwitch("#4d1a00");
+      }
+    );
+    $("#gira").hover(
+      function () {
+        colorSwitch("#331100");
+      },
+      function () {
+        colorSwitch("#4d1a00");
+      }
+    );
+    $("#contacto").hover(
+      function () {
+        colorSwitch("#333333");
+      },
+      function () {
+        colorSwitch("#4d1a00");
+      }
+    );
+    function colorSwitch(color) {
+      $("body").css("background-color", color);
+      $(".navbar-nav").css("background-color", color);
+      $(".navbar-dark").css("background-color", color);
+    }
+    especial.css("font-size", "1.5rem");
+
+    $("#bio,#gira,#fotos,#musica,#contacto").hover(
+      function () {
+        $(this).animate({ fontSize: "1.85rem" }, 300);
+      },
+      function () {
+        $(this).animate({ fontSize: "1.5rem" }, 300);
+      }
+    );
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

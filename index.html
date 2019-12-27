@@ -3,343 +3,277 @@
 <!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#787878" />
-    <title>Thom Yorke Official Site</title>
-    <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.css" />
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
-    <style type="text/css">
-        .ham {
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-            transition: transform 300ms;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        .hamRotate.active {
-            transform: rotate(45deg);
-        }
-        
-        .hamRotate180.active {
-            transform: rotate(180deg);
-        }
-        
-        .line {
-            fill: none;
-            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-            stroke: #6c757d;
-            stroke-width: 5.5;
-            stroke-linecap: round;
-        }
-        
-        .ham1 .top {
-            stroke-dasharray: 40 139;
-        }
-        
-        .ham1 .bottom {
-            stroke-dasharray: 40 180;
-        }
-        
-        .ham1.active .top {
-            stroke-dashoffset: -98px;
-        }
-        
-        .ham1.active .bottom {
-            stroke-dashoffset: -138px;
-        }
-        
-        @media (min-width: 992px) {
-            .ham,
-            .line,
-            .ham1 {
-                display: none;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#787878" />
+  <title>Thom Yorke Official Site</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <style type="text/css">
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 300ms;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: #6c757d;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham1 .top {
+      stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+      stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+      stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+      stroke-dashoffset: -138px;
+    }
+
+    @media (min-width: 992px) {
+
+      .ham,
+      .line,
+      .ham1 {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background-color: #000000; transition: 300ms ease-out;">
-            <a class="navbar-brand text-secundary font-weight-bold py-0" style="font-size: 2.2rem;" href="index.html">Thom Yorke</a
-        >
-        <svg
-          class="ham hamRotate ham1"
-          id="burger"
-          viewBox="0 0 100 100"
-          width="50"
-          onclick="this.classList.toggle('active')"
-        >
-          <path
-            class="line top"
-            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
-          />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path
-            class="line bottom"
-            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
-          />
-        </svg>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
+      style="background-color: #000000; transition: 300ms ease-out;">
+      <a class="navbar-brand text-secundary font-weight-bold py-0 mx-2" style="font-size: 2.2rem;"
+        href="index.html">Thom Yorke</a>
+      <svg class="ham hamRotate ham1" id="burger" viewBox="0 0 100 100" width="50"
+        onclick="this.classList.toggle('active')">
+        <path class="line top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
 
-        <!-- Bootstrap Toggler disable
-          <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>-->
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo">
 
-        <div class="navbar-collapse collapse" id="navbarTogglerDemo">
-          <!--<div class="d-flex flex-row toggle-menu"></div>-->
 
-          <ul class="navbar-nav especial toggle-menu justify-content-center">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light mx-3 p-0"
-                href="videos.html"
-                id="fotos"
-                >Videos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light mx-3 p-0"
-                href="music.html"
-                id="musica"
-                >Music</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light mx-3 p-0"
-                href="biography.html"
-                id="bio"
-                >Biography</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light mx-3 p-0"
-                href="tours.html"
-                id="gira"
-                >Tour</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="mobile-footer">
-          <ul class="navbar-nav mt-lg-0 justify-content-center">
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-              <a
-                class="fab fa-spotify nav-link p-0"
-                href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
-                title="Spotify"
-                target="_blank"
-              ></a>
-            </li>
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-                <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073" title="Apple Music" target="_blank"></a>
-            </li>
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-                <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter" target="_blank"></a>
-            </li>
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-                <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250" title="Facebook m-1" target="_blank"></a>
-            </li>
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-                <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram" target="_blank"></a>
-            </li>
-            <li class="nav-item mx-2" style="font-size: 1.2em;">
-                <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ" title="YouTube" target="_blank"></a>
-            </li>
-            </ul>
-            </div>
-        </nav>
-    </header>
+        <ul class="navbar-nav especial toggle-menu justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="videos.html" id="fotos">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="music.html" id="musica">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="biography.html" id="bio">Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="tours.html" id="gira">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="contact.html" id="contacto">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-footer">
+        <ul class="navbar-nav mt-lg-0 justify-content-center">
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-spotify nav-link p-0" href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+              title="Spotify" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073"
+              title="Apple Music" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
+              title="Facebook m-1" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ"
+              title="YouTube" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <div class="hidden-poster container-fluid p-0">
-        <img src="img/TY-cover.jpg" alt="Thom Yorke" class="img-fluid" style="min-width: 100%; height: auto; opacity: 0.6;" />
-        <div class="section-mobile">
-            <img src="img/thom-02-02.png" alt="Thom Logo" class="img-fluid-80" />
-            <p>
-                <a href="#anima">
-                    <i class="fa fa-chevron-down" style="font-size: larger; color: darkgray; margin-top: 30px;"></i>
-                </a>
-            </p>
-        </div>
+  <div class="hidden-poster container-fluid p-0">
+    <img src="img/TY-cover.jpg" alt="Thom Yorke" class="img-fluid"
+      style="min-width: 100%; height: auto; opacity: 0.6;" />
+    <div class="section-mobile">
+      <img src="img/thom-02-02.png" alt="Thom Logo" class="img-fluid-80" />
+      <p>
+        <a href="#anima">
+          <i class="fa fa-chevron-down" style="font-size: larger; color: darkgray; margin-top: 30px;"></i>
+        </a>
+      </p>
     </div>
-    <div class="reorder">
-        <div class="container px-0 carrusel">
-            <div class="text-center">
-                <h1 class="text-light h2">Latest Gigs</h1>
+  </div>
+  <div class="reorder">
+    <div class="container px-0 carrusel">
+      <div class="text-center">
+        <h1 class="text-light h2">Latest Gigs</h1>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Seattle-Paramount-Theatre-Thom-Yorke-9-1.jpg" class="d-block w-100" alt="Paramount Theatre" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Paramount Theatre, Seattle, WA</h5>
+              <p>October 20th, 2019</p>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/Seattle-Paramount-Theatre-Thom-Yorke-9-1.jpg" class="d-block w-100" alt="Paramount Theatre" />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Paramount Theatre, Seattle, WA</h5>
-                            <p>October 20th, 2019</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Las-Vegas-Chelsea-Cosmopolitan-1.jpg" class="d-block w-100" alt="Las-Vegas-Chelsea-Cosmopolitan" />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>The Chelsea Cosmopolitan, Las Vegas, NV</h5>
-                            <p>October 26th, 2019</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Thom-Yorke-Greek_Oct-29th-2019_Web-Res_Annie-Lesser-7191-1.jpg" class="d-block w-100" alt="Greeek-Theatre" />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Greek Theatre, Los Angeles, CA</h5>
-                            <p>October 29th, 2019</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Las-Vegas-Chelsea-Cosmopolitan-1.jpg" class="d-block w-100"
+              alt="Las-Vegas-Chelsea-Cosmopolitan" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Chelsea Cosmopolitan, Las Vegas, NV</h5>
+              <p>October 26th, 2019</p>
             </div>
-        </div>
-
-        <div id="anima">
-            <div class="jumbotron jumbotron-fluid text-center mt-4 mb-1 pb-2" style="background-color: transparent;">
-                <div class="container col-md-6 px-0">
-                    <h1 class="text-light h2 mb-0">NEW ALBUM "ANIMA" OUT NOW</h1>
-                    <img src="img/thom-yorke-anima.jpeg" class="img-fluid" alt="Responsive image" />
-                    <hr class="my-2" />
-
-                    <a class="btn btn-outline-secondary btn-lg py-1 px-3" href="#" role="button" style="font-size: 1.5rem;">Buy it!</a
-            >
+          </div>
+          <div class="carousel-item">
+            <img src="img/Thom-Yorke-Greek_Oct-29th-2019_Web-Res_Annie-Lesser-7191-1.jpg" class="d-block w-100"
+              alt="Greeek-Theatre" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Greek Theatre, Los Angeles, CA</h5>
+              <p>October 29th, 2019</p>
+            </div>
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="container px-0 px-lg-5">
-        <div class="text-center">
-          <h1 class="text-light h2 mt-2">TRAFFIC - ANIMA</h1>
-        </div>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/EQgezs5Bcp8"
-            allowfullscreen
-          ></iframe>
+    </div>
+
+    <div id="anima">
+      <div class="jumbotron jumbotron-fluid text-center mt-4 mb-1 pb-2" style="background-color: transparent;">
+        <div class="container col-md-6 px-0">
+          <h1 class="text-light h2 mb-0">NEW ALBUM "ANIMA" OUT NOW</h1>
+          <img src="img/thom-yorke-anima.jpeg" class="img-fluid" alt="Responsive image" />
+          <hr class="my-2" />
+
+          <a class="btn btn-outline-secondary btn-lg py-1 px-3" href="#" role="button" style="font-size: 1.5rem;">Buy
+            it!</a>
         </div>
       </div>
     </div>
-    <div class="container-sm mb-3">
-      <h1 class="text-light text-center h2">Signup for updates!</h1>
-      <form class="needs-validation " novalidate>
-        <div class="form-row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <label
-              for="validationTooltip01"
-              class="text-light"
-              style="font-size: 1.5rem;"
-              >Name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="validationTooltip01"
-              placeholder="Thom Yorke"
-              required
-            />
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3">
-            <label
-              for="validationTooltipUsername"
-              class="text-light"
-              style="font-size: 1.5rem;"
-              >Email</label
-            >
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span
-                  class="input-group-text far fa-envelope"
-                  id="validationTooltipUsernamePrepend"
-                ></span>
-              </div>
-              <input
-                type="email"
-                class="form-control"
-                id="validationTooltipUsername"
-                style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;"
-                aria-describedby="validationTooltipUsernamePrepend"
-                placeholder="name@example.com"
-                required
-              />
-              <div class="invalid-tooltip">
-                Please choose a unique and valid email.
-              </div>
-            </div>
+    <div class="container px-0 px-lg-5">
+      <div class="text-center">
+        <h1 class="text-light h2 mt-2">TRAFFIC - ANIMA</h1>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EQgezs5Bcp8" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="container-sm mb-3">
+    <h1 class="text-light text-center h2">Signup for updates!</h1>
+    <form class="needs-validation " novalidate>
+      <div class="form-row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01" class="text-light" style="font-size: 1.5rem;">Name</label>
+          <input type="text" class="form-control" id="validationTooltip01" placeholder="Thom Yorke" required />
+          <div class="valid-tooltip">
+            Looks good!
           </div>
         </div>
 
-        <div class="form-row justify-content-center m-0">
-          <div class="col-md-5 px-0">
-            <label
-              for="validationTooltip04"
-              class="text-light"
-              style="font-size: 1.5rem;"
-              >Choose frequency of updates</label
-            >
-            <select class="custom-select" id="validationTooltip04" required>
-              <option selected disabled value="">Frequency...</option>
-              <option>Daily</option>
-              <option>Weekly</option>
-              <option>Monthly</option>
-            </select>
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltipUsername" class="text-light" style="font-size: 1.5rem;">Email</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text far fa-envelope" id="validationTooltipUsernamePrepend"></span>
+            </div>
+            <input type="email" class="form-control" id="validationTooltipUsername"
+              style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;"
+              aria-describedby="validationTooltipUsernamePrepend" placeholder="name@example.com" required />
             <div class="invalid-tooltip">
-              Please select a value.
+              Please choose a unique and valid email.
             </div>
           </div>
         </div>
-        <div class="form-row justify-content-center m-0">
-          <button
-            class="btn btn-outline-secondary btn-lg mt-3 py-1 px-3"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <footer class="d-flex flex-wrap justify-content-center" id="rafaelch">
-      <div class="nav-item px-auto text-success mb-2" style="font-size: 1rem;">
-        Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
       </div>
-      <!--<nav class="nav flex-colunm flex-sm-row justify-content-center mt-4 mb-2">
+
+      <div class="form-row justify-content-center m-0">
+        <div class="col-md-5 px-0">
+          <label for="validationTooltip04" class="text-light" style="font-size: 1.5rem;">Choose frequency of
+            updates</label>
+          <select class="custom-select" id="validationTooltip04" required>
+            <option selected disabled value="">Frequency...</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a value.
+          </div>
+        </div>
+      </div>
+      <div class="form-row justify-content-center m-0">
+        <button class="btn btn-outline-secondary btn-lg mt-3 py-1 px-3" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="d-flex flex-column text-center" id="rafaelch">
+    <div class="nav-item px-auto text-success mb-1" style="font-size: 1rem;">
+      Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+    </div>
+    <div class="nav-item px-auto text-success mb-1" style="font-size: 0.75rem;">
+      All content is for educational use only
+    </div>
+    <!--<nav class="nav flex-colunm flex-sm-row justify-content-center mt-4 mb-2">
         <div class="nav justify-content-center">
           <a
             class="flex-sm-fill text-sm-center nav-link text-light p-0 mx-4"
@@ -385,98 +319,101 @@
           ></iframe>
         </div>
       </nav>-->
-    </footer>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#burger").click(function() {
-          $("#navbarTogglerDemo").slideToggle(300);
-        });
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#burger").click(function () {
+        $("#navbarTogglerDemo").slideToggle(300);
       });
-      var especial = $(".especial");
-      $("#fotos").hover(
-        function() {
-          colorSwitch("#A25227");
-        },
-        function() {
-          colorSwitch("#000000");
-        }
-      );
-      $("#musica").hover(
-        function() {
-          colorSwitch("#83705F");
-        },
-        function() {
-          colorSwitch("#000000");
-        }
-      );
-      $("#bio").hover(
-        function() {
-          colorSwitch("#773C1A");
-        },
-        function() {
-          colorSwitch("#000000");
-        }
-      );
-      $("#gira").hover(
-        function() {
-          colorSwitch("#332A25");
-        },
-        function() {
-          colorSwitch("#000000");
-        }
-      );
-      function colorSwitch(color) {
-        $("body").css("background-color", color);
-        $(".navbar-nav").css("background-color", color);
-        $(".navbar-dark").css("background-color", color);
+    });
+    var especial = $(".especial");
+    $("#fotos").hover(
+      function () {
+        colorSwitch("#cc4400");
+      },
+      function () {
+        colorSwitch("#000000");
       }
-      especial.css("font-size", "1.5rem");
+    );
+    $("#musica").hover(
+      function () {
+        colorSwitch("#993300");
+      },
+      function () {
+        colorSwitch("#000000");
+      }
+    );
+    $("#bio").hover(
+      function () {
+        colorSwitch("#4d1a00");
+      },
+      function () {
+        colorSwitch("#000000");
+      }
+    );
+    $("#gira").hover(
+      function () {
+        colorSwitch("#331100");
+      },
+      function () {
+        colorSwitch("#000000");
+      }
+    );
+    $("#contacto").hover(
+      function () {
+        colorSwitch("#333333");
+      },
+      function () {
+        colorSwitch("#000000");
+      }
+    );
+    function colorSwitch(color) {
+      $("body").css("background-color", color);
+      $(".navbar-nav").css("background-color", color);
+      $(".navbar-dark").css("background-color", color);
+    }
+    especial.css("font-size", "1.5rem");
 
-      $("#bio,#gira,#fotos,#musica").hover(
-        function() {
-          $(this).animate({ fontSize: "1.7rem" }, 300);
-        },
-        function() {
-          $(this).animate({ fontSize: "1.5rem" }, 300);
+    $("#bio,#gira,#fotos,#musica,#contacto").hover(
+      function () {
+        $(this).animate({ fontSize: "1.85rem" }, 300);
+      },
+      function () {
+        $(this).animate({ fontSize: "1.5rem" }, 300);
+      }
+    );
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
         }
-      );
-    </script>
-    <script>
-      $(document).ready(function() {
-        $("a").on("click", function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top
-              },
-              800,
-              function() {
-                window.location.hash = hash;
-              }
-            );
-          }
-        });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

@@ -73,67 +73,112 @@
 
 <body style="height: auto;">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
-            style="background-color: #000000; transition: 300ms ease-out;">
-            <a class="navbar-brand text-secundary font-weight-bold py-0" style="font-size: 2.2rem;"
-                href="index.html">Thom Yorke</a>
-            <svg class="ham hamRotate ham1" id="burger" viewBox="0 0 100 100" width="50"
-                onclick="this.classList.toggle('active')">
-                <path class="line top"
-                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                <path class="line middle" d="m 30,50 h 40" />
-                <path class="line bottom"
-                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-            </svg>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background-color: #000000; transition: 300ms ease-out;">
+            <a class="navbar-brand text-secundary font-weight-bold py-0 mx-2" style="font-size: 2.2rem;" href="index.html">Thom Yorke</a
+        >
+        <svg
+          class="ham hamRotate ham1"
+          id="burger"
+          viewBox="0 0 100 100"
+          width="50"
+          onclick="this.classList.toggle('active')"
+        >
+          <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
 
-            <div class="navbar-collapse collapse" id="navbarTogglerDemo">
-                <!--<div class="d-flex flex-row toggle-menu"></div>-->
+        <!-- Bootstrap Toggler disable
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
 
-                <ul class="navbar-nav especial toggle-menu justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-3 p-0" href="videos.html" id="fotos">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-3 p-0" href="#" id="musica">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-3 p-0" href="biography.html" id="bio">Biography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-3 p-0" href="tours.html" id="gira">Tour</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mobile-footer">
-                <ul class="navbar-nav mt-lg-0 justify-content-center">
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-spotify nav-link p-0"
-                            href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau" title="Spotify"
-                            target="_blank"></a>
-                    </li>
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-apple nav-link p-0"
-                            href="https://music.apple.com/us/artist/thom-yorke/39753073" title="Apple Music"
-                            target="_blank"></a>
-                    </li>
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
-                            target="_blank"></a>
-                    </li>
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
-                            title="Facebook" target="_blank"></a>
-                    </li>
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/"
-                            title="Instagram" target="_blank"></a>
-                    </li>
-                    <li class="nav-item mx-2" style="font-size: 1.2em;">
-                        <a class="fab fa-youtube nav-link p-0"
-                            href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ" title="YouTube"
-                            target="_blank"></a>
-                    </li>
-                </ul>
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo">
+          <!--<div class="d-flex flex-row toggle-menu"></div>-->
+
+          <ul class="navbar-nav especial toggle-menu justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="videos.html"
+                id="fotos"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="#"
+                id="musica"
+                >Music</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="biography.html"
+                id="bio"
+                >Biography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="tours.html"
+                id="gira"
+                >Tour</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light mx-3 p-0"
+                href="contact.html"
+                id="contacto"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-footer">
+          <ul class="navbar-nav mt-lg-0 justify-content-center">
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+              <a
+                class="fab fa-spotify nav-link p-0"
+                href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+                title="Spotify"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073" title="Apple Music" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250" title="Facebook m-1" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram" target="_blank"></a>
+            </li>
+            <li class="nav-item mx-2" style="font-size: 1.2em;">
+                <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ" title="YouTube" target="_blank"></a>
+            </li>
+            </ul>
             </div>
         </nav>
     </header>
@@ -317,7 +362,7 @@
         </div>
     </main>
     <main class="container-sroll hidden-mobile">
-        <div class="left-block anima">
+        <div class="left-block mt-0 anima">
             <div class="bg-cover right-side">
                 <h1 class="text-light h1 text-center">Anima (2019)</h1>
                 <iframe src="https://open.spotify.com/embed/album/1g4vEVvVVFvFju0gS0DMbh" width="320" height="400"
@@ -356,12 +401,14 @@
         </div>
     </main>
 
-    <footer class="d-flex flex-wrap justify-content-center" id="rafaelch">
-        <div class="nav-item px-auto text-DARK mb-2" style="font-size: 1rem;">
-            Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+    <footer class="d-flex flex-column text-center" id="rafaelch">
+        <div class="nav-item px-auto text-light mb-1" style="font-size: 1rem;">
+          Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
         </div>
-
-    </footer>
+        <div class="nav-item px-auto text-light mb-1" style="font-size: 0.75rem;">
+          All content is for educational use only
+        </div>
+      </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -374,92 +421,88 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        $("body").css("background-color", "#83705F");
-        $(".navbar-nav").css("background-color", "#83705F");
-        $(".navbar-dark").css("background-color", "#83705F");
-        $(".mobile-footer").css("background-color", "#83705F");
-
-        $(document).ready(function () {
-            $("#burger").click(function () {
-                $("#navbarTogglerDemo").slideToggle(300);
-            });
+        $("body,.navbar-dark,.navbar-nav").css("background-color","#993300");
+        $(document).ready(function() {
+          $("#burger").click(function() {
+            $("#navbarTogglerDemo").slideToggle(300);
+          });
         });
         var especial = $(".especial");
         $("#fotos").hover(
-            function () {
-                colorSwitch("#A25227");
-            },
-            function () {
-                colorSwitch("#83705F");
-            }
+          function() {
+            colorSwitch("#cc4400");
+          },
+          function() {
+            colorSwitch("#993300");
+          }
         );
         $("#musica").hover(
-            function () {
-                colorSwitch("#83705F");
-            },
-            function () {
-                colorSwitch("#83705F");
-            }
+          function() {
+            colorSwitch("#993300");
+          },
+          function() {
+            colorSwitch("#993300");
+          }
         );
         $("#bio").hover(
-            function () {
-                colorSwitch("#773C1A");
-            },
-            function () {
-                colorSwitch("#83705F");
-            }
+          function() {
+            colorSwitch("#4d1a00");
+          },
+          function() {
+            colorSwitch("#993300");
+          }
         );
         $("#gira").hover(
-            function () {
-                colorSwitch("#332A25");
-            },
-            function () {
-                colorSwitch("#83705F");
-            }
+          function() {
+            colorSwitch("#331100");
+          },
+          function() {
+            colorSwitch("#993300");
+          }
         );
-
+        $("#contacto").hover(
+          function() {
+            colorSwitch("#333333");
+          },
+          function() {
+            colorSwitch("#993300");
+          }
+        );
         function colorSwitch(color) {
-            $("body").css("background-color", color);
-            $(".navbar-nav").css("background-color", color);
-            $(".navbar-dark").css("background-color", color);
+          $("body").css("background-color", color);
+          $(".navbar-nav").css("background-color", color);
+          $(".navbar-dark").css("background-color", color);
         }
         especial.css("font-size", "1.5rem");
-
-        $("#bio,#gira,#fotos,#musica").hover(
-            function () {
-                $(this).animate({
-                    fontSize: "1.7rem"
-                },
-                    300
-                );
-            },
-            function () {
-                $(this).animate({
-                    fontSize: "1.5rem"
-                },
-                    300
-                );
-            }
+  
+        $("#bio,#gira,#fotos,#musica,#contacto").hover(
+          function() {
+            $(this).animate({ fontSize: "1.85rem" }, 300);
+          },
+          function() {
+            $(this).animate({ fontSize: "1.5rem" }, 300);
+          }
         );
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("a").on("click", function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $("html, body").animate({
-                        scrollTop: $(hash).offset().top
-                    },
-                        800,
-                        function () {
-                            window.location.hash = hash;
-                        }
-                    );
+      </script>
+      <script>
+        $(document).ready(function() {
+          $("a").on("click", function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top
+                },
+                800,
+                function() {
+                  window.location.hash = hash;
                 }
-            });
+              );
+            }
+          });
         });
-    </script>
+      </script>
 </body>
 
 </html>

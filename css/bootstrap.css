@@ -4855,7 +4855,7 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 0rem 1rem;
+    padding: none;
     height: 3.3rem;
 }
 
@@ -4882,7 +4882,6 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
@@ -5089,12 +5088,13 @@ input[type="button"].btn-block {
         transform: translateX(-50%);
     }
     .toggle-menu {
-        position: absolute;
+        /*position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        transform: translateX(-50%);*/
+        flex-wrap: wrap;
         background-color: var(--dark);
-        min-width: 100%;
+        width: 100%;
     }
     .mobile-footer {
         position: fixed;
@@ -5112,7 +5112,7 @@ input[type="button"].btn-block {
         margin: 2px 6px;
     }
     #rafaelch {
-        margin-bottom: 35px;
+        margin-bottom: 50px;
     }
     .hidden-poster {
         display: block;
