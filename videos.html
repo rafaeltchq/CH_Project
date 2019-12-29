@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#cc4400" />
+  <title>Videos - Thom Yorke</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <style type="text/css">
+    .ham {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 300ms;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: #ffffff;
+      stroke-width: 5.5;
+      stroke-linecap: round;
+    }
+
+    .ham1 .top {
+      stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+      stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+      stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+      stroke-dashoffset: -138px;
+    }
+
+    @media (min-width: 992px) {
+
+      .ham,
+      .line,
+      .ham1,
+      .hidden-lg {
+        display: none;
+      }
+
+      .video-lg {
+        width: 790px !important;
+        height: 444.375px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="transition: 300ms ease-out;">
+      <a class="navbar-brand text-secundary font-weight-bold py-0 mx-2" style="font-size: 2.2rem;"
+        href="index.html">Thom Yorke</a>
+      <svg class="ham hamRotate ham1" id="burger" viewBox="0 0 100 100" width="50"
+        onclick="this.classList.toggle('active')">
+        <path class="line top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
+
+
+
+      <div class="navbar-collapse collapse" id="navbarTogglerDemo">
+
+
+        <ul class="navbar-nav especial toggle-menu justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="videos.html" id="fotos">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="music.html" id="musica">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="biography.html" id="bio">Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="#" id="gira">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3 p-0" href="contact.html" id="contacto">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-footer">
+        <ul class="navbar-nav mt-lg-0 justify-content-center">
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-spotify nav-link p-0" href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+              title="Spotify" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-apple nav-link p-0" href="https://music.apple.com/us/artist/thom-yorke/39753073"
+              title="Apple Music" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
+              title="Facebook m-1" target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/" title="Instagram"
+              target="_blank"></a>
+          </li>
+          <li class="nav-item mx-2" style="font-size: 1.2em;">
+            <a class="fab fa-youtube nav-link p-0" href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ"
+              title="YouTube" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid text-center p-0">
+    <h1 class="h2 text-light mt-5">Videos</h1>
+    <div class="d-lg-inline-flex mb-5 mt-2">
+      <iframe id="ytplayer" type="text/html"
+        src="https://www.youtube.com/embed/IZfCj7tuZ-E?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
+        frameborder="0" allowfullscreen class="full-screen-video video-lg"></iframe>
+    </div>
+    <div class="d-lg-inline-flex mb-5 mt-2">
+      <iframe id="ytplayer" type="text/html"
+        src="https://www.youtube.com/embed/I03xFqbxUp8?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
+        frameborder="0" allowfullscreen class="full-screen-video video-lg"></iframe>
+    </div>
+    <div class="d-lg-inline-flex mb-5 mt-2">
+      <iframe id="ytplayer" type="text/html"
+        src="https://www.youtube.com/embed/BTZl9KMjbrU?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
+        frameborder="0" allowfullscreen class="full-screen-video video-lg"></iframe>
+    </div>
+    <div class="d-lg-inline-flex mb-5 mt-2">
+      <iframe id="ytplayer" type="text/html"
+        src="https://www.youtube.com/embed/hJ9ljQXIrY4?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
+        frameborder="0" allowfullscreen class="full-screen-video video-lg"></iframe>
+    </div>
+
+  </main>
+
+
+  <footer class="d-flex flex-column text-center" id="rafaelch">
+    <div class="nav-item px-auto text-light mb-1" style="font-size: 1rem;">
+      Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+    </div>
+    <div class="nav-item px-auto text-light mb-1" style="font-size: 0.75rem;">
+      All content is for educational use only
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript">
+    $("body,.navbar-dark,.navbar-nav,.mobile-footer").css("background-color", "#cc4400");
+    $(document).ready(function () {
+      $("#burger").click(function () {
+        $("#navbarTogglerDemo").slideToggle(300);
+      });
+    });
+    var especial = $(".especial");
+    $("#fotos").hover(
+      function () {
+        colorSwitch("#cc4400");
+      },
+      function () {
+        colorSwitch("#cc4400");
+      }
+    );
+    $("#musica").hover(
+      function () {
+        colorSwitch("#993300");
+      },
+      function () {
+        colorSwitch("#cc4400");
+      }
+    );
+    $("#bio").hover(
+      function () {
+        colorSwitch("#4d1a00");
+      },
+      function () {
+        colorSwitch("#cc4400");
+      }
+    );
+    $("#gira").hover(
+      function () {
+        colorSwitch("#331100");
+      },
+      function () {
+        colorSwitch("#cc4400");
+      }
+    );
+    $("#contacto").hover(
+      function () {
+        colorSwitch("#333333");
+      },
+      function () {
+        colorSwitch("#cc4400");
+      }
+    );
+    function colorSwitch(color) {
+      $("body").css("background-color", color);
+      $(".navbar-nav").css("background-color", color);
+      $(".navbar-dark").css("background-color", color);
+      $(".mobile-footer").css("background-color", color);
+    }
+    especial.css("font-size", "1.5rem");
+
+    $("#bio,#gira,#fotos,#musica,#contacto").hover(
+      function () {
+        $(this).animate({ fontSize: "1.85rem" }, 300);
+      },
+      function () {
+        $(this).animate({ fontSize: "1.5rem" }, 300);
+      }
+    );
+    var $vid = $('.full-screen-video');
+
+    updateSize();
+    $(window).resize(function () {
+      if ($(window).width() <= 992) {
+      updateSize();
+      }
+    });
+
+    function updateSize() {
+
+      var $eWidth = window.innerWidth;
+
+      var $AspectRatio = 444.375 / 790;
+
+      var $newHeight = $eWidth * $AspectRatio;
+
+      $vid.css({ "width": $eWidth, "height": $newHeight });
+
+
+    };
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
