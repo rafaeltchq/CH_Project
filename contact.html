@@ -3,115 +3,366 @@
 <!--Proyecto Dis. Web: Rafael Chacin #coderhouse-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact for Thom Yorke Gigs</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2b2b2b" />
+    <title>Contact - Thom Yorke</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/music.min.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .login-font::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        .login-font:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+        }
+
+        .login-font::-ms-input-placeholder {
+            /* Microsoft Edge */
+            font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+        }
+
+        .ham {
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 300ms;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .hamRotate.active {
+            transform: rotate(45deg);
+        }
+
+        .hamRotate180.active {
+            transform: rotate(180deg);
+        }
+
+        .line {
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #dfdfdf;
+            stroke-width: 5.5;
+            stroke-linecap: round;
+        }
+
+        .ham1 .top {
+            stroke-dasharray: 40 139;
+        }
+
+        .ham1 .bottom {
+            stroke-dasharray: 40 180;
+        }
+
+        .ham1.active .top {
+            stroke-dashoffset: -98px;
+        }
+
+        .ham1.active .bottom {
+            stroke-dashoffset: -138px;
+        }
+
+
+        @media (min-width: 992px) {
+
+            .ham,
+            .line,
+            .ham1,
+            .hidden-lg {
+                display: none;
+            }
+
+            .formulario {
+                max-width: 60vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1 class="thomyorke">Thom Yorke</h1>
-        <nav class="header_nav">
-            <a class="nav_text" href="index.html">Home</a>
-            <a class="nav_text" href="gallery.html">Gallery</a>
-            <div class="nav_div">
-                <a class="nav_text" href="discography.html">Discography & Audio</a>
-                <ul class="discos">
-                    <li class="table_title">Anima (2019)</li>
-                    <li class="table_title">Suspiria (2018)</li>
-                    <li class="table_title">Tomorrow's Modern Boxes (2014)</li>
-                    <li class="table_title">The Eraser Rmxs (2007)</li>
-                    <li class="table_title">The Eraser (2006)</li>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
+            style="transition: 300ms ease-out;">
+            <a class="navbar-brand text-secundary font-weight-bold py-0 mx-2" style="font-size: 2.2rem;"
+                href="index.html">Thom Yorke</a>
+            <svg class="ham hamRotate ham1" id="burger" viewBox="0 0 100 100" width="50"
+                onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+
+
+            <div class="navbar-collapse collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav especial toggle-menu justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3 p-0" href="videos.html" id="fotos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3 p-0" href="music.html" id="musica">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3 p-0" href="biography.html" id="bio">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3 p-0" href="tours.html" id="gira">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3 p-0" href="#" id="contacto">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <a class="nav_text" href="biography.html">Biography</a>
-            <a class="nav_text" href="tours.html">Tours</a>
+            <div class="mobile-footer">
+                <ul class="navbar-nav mt-lg-0 justify-content-center">
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-spotify nav-link p-0"
+                            href="https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau" title="Spotify"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-apple nav-link p-0"
+                            href="https://music.apple.com/us/artist/thom-yorke/39753073" title="Apple Music"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-twitter nav-link p-0" href="https://twitter.com/thomyorke" title="Twitter"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-facebook-f nav-link p-0" href="https://www.facebook.com/thom.yorke.353250"
+                            title="Facebook m-1" target="_blank"></a>
+                    </li>
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-instagram nav-link p-0" href="https://www.instagram.com/thomyorke/"
+                            title="Instagram" target="_blank"></a>
+                    </li>
+                    <li class="nav-item mx-2" style="font-size: 1.2em;">
+                        <a class="fab fa-youtube nav-link p-0"
+                            href="https://www.youtube.com/channel/UC9BJwi8Q2AiLtLHdGlWqsrQ" title="YouTube"
+                            target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <p class="span_title"><span class="span_bold">If you want to contact Thom Yorke's Manager...</span> please, submit
-        this form:</p>
-    <form action="" method="GET" enctype="application/x-www-form-urlencoded">
-        <fieldset id="contact">
-            <div class="contact_info">
-                <h2 class="form_title">Contact Information</h2>
-                <div class="name_data">
-                    <label for="booking_name" class="form_data">Your Name:
-                        <input type="text" name="booking_name" class="form_fld" placeholder="  Name*" required></label>
-                    <label for="booking_surname" class="form_data">Your Surname:
-                        <input type="text" name="booking_surname" class="form_fld" placeholder="  Surame*"
-                            required></label>
-                    <label for="phone" class="form_data">Your Phone Number:
-                        <input class="form_fld" type="tel" name="phone" placeholder="  Phone Number*" required></label>
-                    <label for="email" class="form_data">Your Email:
-                        <input class="form_fld" type="email" name="email" placeholder="  Email Address*"
-                            required></label>
-                    <label for="company" class="form_data">Your Company Name:
-                        <input class="form_fld" type="text" name="company" placeholder="  Company Name"></label>
-                </div>
-                <div class="contact_ways">
-                    <label for="contact_ways" class="contact_ways_title">Which way do you like us tocontact you?</label>
-                    <div class="chckboxes">
-                        <label for="via_email" class="chckbx_name">
-                            <input type="checkbox" name="via_email" value="via_email" class="checkbox_ctc"> By
-                            Email</label>
-                        <label for="via_phone" class="chckbx_name">
-                            <input type="checkbox" name="via_phone" value="via_phone" class="checkbox_ctc"> By
-                            Phone</label>
-                        <label for="via_meeting" class="chckbx_name">
-                            <input type="checkbox" name="via_meeting" value="via_meeting" class="checkbox_ctc"> Via
-                            Skype</label>
+    <main class="container-fluid" style="margin-top: 5em;">
+        <div class="formulario mx-auto">
+            <p class="text-light h3"><span class="text-secundary h3">If you want to contact Thom Yorke's
+                    Manager...</span>
+                please, submit
+                this form:</p>
+            <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+                <fieldset style="border: 3px white solid; border-radius: 5px; margin: 0 auto;" class="formulario">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h2 class="text-warning h2 text-center my-2">Contact Information</h2>
+                            <div class="container-fluid d-flex flex-column px-5">
+                                <label for="booking_name" class="h4 text-light my-2">Your Name:</label>
+                                <input type="text" id="booking_name" class="form-control my-1 login-font"
+                                    placeholder="Name*" required>
+                                <label for="booking_surname" class="h4 text-light my-2">Your Surname:</label>
+                                <input type="text" id="booking_surname" class="form-control my-1 login-font"
+                                    placeholder="Surame*" required>
+                                <label for="phone" class="h4 text-light my-2">Your Phone Number:</label>
+                                <input class="form-control my-1 login-font" type="tel" id="phone"
+                                    placeholder="Phone Number*" required>
+                                <label for="email" class="h4 text-light my-2">Your Email:</label>
+                                <input class="form-control my-1 login-font" type="email" id="email"
+                                    placeholder="Email Address*" required>
+                                <label for="company" class="h4 text-light my-2">Your Company Name:</label>
+                                <input class="form-control my-1 login-font" type="text" id="company"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="container text-center">
+                                <label for="contact_ways" class="text-light h5">Which way do you like us tocontact
+                                    you?</label>
+                                <ul class="p-0 mx-auto">
+                                    <li class="form-check list-unstyled">
+                                        <input type="checkbox" id="via_email" value=""
+                                            style="margin: 0 5px; height: 20px; width: 20px;">
+                                        <label for="via_email" class="form-check-label text-light h4">By Email</label>
+                                    </li>
+                                    <li class="form-check list-unstyled">
+                                        <input type="checkbox" id="via_phone" value=""
+                                            style="margin: 0 5px; height: 20px; width: 20px;">
+                                        <label for="via_phone" class="form-check-label text-light h4">By Phone</label>
+                                    </li>
+                                    <li class="form-check list-unstyled">
+                                        <input type="checkbox" id="via_meeting" value=""
+                                            style="margin: 0 5px; height: 20px; width: 20px;">
+                                        <label for="via_meeting" class="form-check-label text-light h4">Via
+                                            Skype</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="text-warning h2 text-center my-2">Event Information</h2>
+                            <div class="container-fluid d-flex flex-column px-5">
+                                <label class="h4 text-light my-2" for="budget">Approximate Budget:</label>
+                                <input class="form-control my-1 login-font" type="number" id="budget"
+                                    placeholder="GB Pounds">
+                                <label class="h4 text-light my-2" for="event_date">Event Date:</label>
+                                <input class="form-control my-1 login-font" type="date" id="event_date">
+                                <label class="h4 text-light my-2" for="event_type">Event Type:</label>
+                                <select class="form-control my-1 login-font" id="event_type">
+                                    <optgroup label="Event Type">
+                                        <option value>Select event type</option>
+                                        <option value="corporate_funtion">Corporate Funtion</option>
+                                        <option value="private_party">Private Party</option>
+                                        <option value="radio_station">Radio Station Promotion</option>
+                                        <option value="independient_promoter">Independient Promoter</option>
+                                        <option value="other">Other</option>
+                                    </optgroup>
+                                </select>
+                                <label class="h4 text-light my-2" for="attendees_number">Number of Attendees:</label>
+                                <input class="form-control my-1 login-font" type="number" id="attendees"
+                                    placeholder="Number of Attendees">
+                                <label class="h4 text-light my-2" for="event_location">Event Location:</label>
+                                <input class="form-control my-1 login-font" type="text" id="event_location"
+                                    placeholder="Event Location">
+                                <label class="h4 text-light my-2" for="about_event">Comments:</label>
+                                <textarea id="about_event" placeholder="Tell us about your event..."
+                                    class="form-control my-1 login-font" style="max-width: 300px;"></textarea>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="container-fluid text-center">
+                        <input type="submit" value="Submit Request" class="btn btn-outline-light btn-lg py-1 px-3 m-3">
+                        <input type="reset" class="btn btn-outline-light btn-lg py-1 px-3 m-3" value="Reset">
+                    </div>
+                </fieldset>
+            </form>
+            <div class="container-fluid my-2">
+                <p class="text-wrap text-light h5">
+                    Want to talk about your event now?<br>
+                    Give us a call and one of our booking agents will be happy to help you immediately.
+                </p>
+                <p class="text-center">
+                <a href="tel:+442055554444" class="text-decoration-none h3 text-info text-center">UK - (020)
+                    5555-4444</a></p>
             </div>
-            <div class="budget_info">
-                <h2 class="form_title">Event Information</h2>
-                <div class="budget_data">
-                    <label class="form_data" for="budget">Approximate Budget:
-                        <input class="form_fld" type="number" name="budget" placeholder="  GB Pounds"></label>
-                    <label class="form_data" for="event_date">Event Date:
-                        <input class="form_fld" type="date" name="event_date"></label>
-                    <label class="form_data" for="event_type">Event Type:
-                        <select class="form_fld" name="event_type">
-                            <optgroup label="Event Type">
-                                <option value>Select event type</option>
-                                <option value="corporate_funtion">Corporate Funtion</option>
-                                <option value="private_party">Private Party</option>
-                                <option value="radio_station">Radio Station Promotion</option>
-                                <option value="independient_promoter">Independient Promoter</option>
-                                <option value="other">Other</option>
-                            </optgroup>
-                        </select></label>
-                    <label class="form_data" for="attendees_number">Number of Attendees:
-                        <input class="form_fld" type="number" name="attendees"
-                            placeholder="  Number of Attendees"></label>
-                    <label class="form_data" for="event_location">Event Location:
-                        <input class="form_fld" type="text" name="event_location"
-                            placeholder="  Event Location"></label>
-                </div>
-                <label class="form_cmmt" for="about_event">Comments:
-                    <textarea name="about_event" placeholder="  Tell us about your event"></textarea></label>
-            </div>
-            <div id="send_bttn">
-                <input type="submit" name="submit" value="Submit Request" class="bttns">
-                <input type="reset" class="bttns" value="Reset">
-            </div>
-        </fieldset>
-    </form>
-    <div>
-        <p>
-            Want to talk about your event now?<br>
-            Give us a call and one of our booking agents will be happy to help you immediately.
-        </p>
-        <a href="tel:020-5555-4444">(020) 5555-4444</a>
-    </div>
-    <footer class="main_footer">
-        <a class="footer_text" href="http://www.facebook.com" title="Facebook" target="_blank">Facebook</a>
-        <a class="footer_text" href="http://www.twitter.com" title="Twitter" target="_blank">Twitter</a>
-        <a class="footer_text" href="index.html" title="Home">Back to Home...</a>
+        </div>
+
+    </main>
+    <footer class="d-flex flex-column text-center" id="rafaelch">
+        <div class="nav-item px-auto text-light mb-1" style="font-size: 1rem;">
+            Proyecto Final Coderhouse, BsAs, Argentina -- Autor: Rafael Chacin
+        </div>
+        <div class="nav-item px-auto text-light mb-1" style="font-size: 0.75rem;">
+            All content is for educational use only
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $("body,.navbar-dark,.navbar-nav,.mobile-footer").css("background-color", "#333333");
+        $(document).ready(function () {
+            $("#burger").click(function () {
+                $("#navbarTogglerDemo").slideToggle(300);
+            });
+        });
+        var especial = $(".especial");
+        $("#fotos").hover(
+            function () {
+                colorSwitch("#cc4400");
+            },
+            function () {
+                colorSwitch("#333333");
+            }
+        );
+        $("#musica").hover(
+            function () {
+                colorSwitch("#993300");
+            },
+            function () {
+                colorSwitch("#333333");
+            }
+        );
+        $("#bio").hover(
+            function () {
+                colorSwitch("#4d1a00");
+            },
+            function () {
+                colorSwitch("#333333");
+            }
+        );
+        $("#gira").hover(
+            function () {
+                colorSwitch("#331100");
+            },
+            function () {
+                colorSwitch("#333333");
+            }
+        );
+        $("#contacto").hover(
+            function () {
+                colorSwitch("#333333");
+            },
+            function () {
+                colorSwitch("#333333");
+            }
+        );
+        function colorSwitch(color) {
+            $("body").css("background-color", color);
+            $(".navbar-nav").css("background-color", color);
+            $(".navbar-dark").css("background-color", color);
+            $(".mobile-footer").css("background-color", color);
+        }
+        especial.css("font-size", "1.5rem");
+
+        $("#bio,#gira,#fotos,#musica,#contacto").hover(
+            function () {
+                $(this).animate({ fontSize: "1.85rem" }, 300);
+            },
+            function () {
+                $(this).animate({ fontSize: "1.5rem" }, 300);
+            }
+        );
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("a").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("html, body").animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800,
+                        function () {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
