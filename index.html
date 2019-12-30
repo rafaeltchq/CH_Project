@@ -10,11 +10,29 @@
   <title>Thom Yorke Official Site</title>
   <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap" rel="stylesheet">
   <style type="text/css">
+    .login-font::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+      opacity: 1;
+      /* Firefox */
+    }
+
+    .login-font:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+    }
+
+    .login-font::-ms-input-placeholder {
+      /* Microsoft Edge */
+      font-family: 'Oswald', Courier, monospace, Arial, Helvetica, sans-serif;
+    }
+
     .ham {
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
@@ -211,7 +229,9 @@
         <h1 class="text-light h2 mt-2">TRAFFIC - ANIMA</h1>
       </div>
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EQgezs5Bcp8?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item"
+          src="https://www.youtube.com/embed/EQgezs5Bcp8?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -221,7 +241,7 @@
       <div class="form-row justify-content-center">
         <div class="col-md-4 mb-3">
           <label for="validationTooltip01" class="text-light" style="font-size: 1.5rem;">Name</label>
-          <input type="text" class="form-control" id="validationTooltip01" placeholder="Thom Yorke" required />
+          <input type="text" class="form-control login-font" id="validationTooltip01" placeholder="Thom Yorke" required />
           <div class="valid-tooltip">
             Looks good!
           </div>
@@ -233,7 +253,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text far fa-envelope" id="validationTooltipUsernamePrepend"></span>
             </div>
-            <input type="email" class="form-control" id="validationTooltipUsername"
+            <input type="email" class="form-control login-font" id="validationTooltipUsername"
               style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;"
               aria-describedby="validationTooltipUsernamePrepend" placeholder="name@example.com" required />
             <div class="invalid-tooltip">
@@ -247,7 +267,7 @@
         <div class="col-md-5 px-0">
           <label for="validationTooltip04" class="text-light" style="font-size: 1.5rem;">Choose frequency of
             updates</label>
-          <select class="custom-select" id="validationTooltip04" required>
+          <select class="custom-select login-font" id="validationTooltip04" required>
             <option selected disabled value="">Frequency...</option>
             <option>Daily</option>
             <option>Weekly</option>

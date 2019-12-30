@@ -10,9 +10,9 @@
   <title>Videos - Thom Yorke</title>
   <link rel="shortcut icon" type="image/jpg" href="img/t-y.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
   <style type="text/css">
     .ham {
@@ -66,6 +66,11 @@
         display: none;
       }
 
+      .titu-color {
+        color: #ff4d00 !important;
+        text-shadow: 1px 1px 2px black;
+      }
+
       .video-lg {
         width: 790px !important;
         height: 444.375px !important;
@@ -95,7 +100,7 @@
 
         <ul class="navbar-nav especial toggle-menu justify-content-center">
           <li class="nav-item">
-            <a class="nav-link text-light mx-3 p-0" href="#" id="fotos">Videos</a>
+            <a class="nav-link text-light mx-3 p-0 titu-color" href="#" id="fotos">Videos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light mx-3 p-0" href="music.html" id="musica">Music</a>
@@ -142,8 +147,7 @@
     </nav>
   </header>
   <main class="container-fluid text-center p-0">
-    <h1 class="h2 text-light mt-5">Videos</h1>
-    <div class="d-lg-inline-flex mb-5 mt-2">
+    <div class="d-lg-inline-flex mb-5 mt-5 pt-2">
       <iframe id="ytplayer" type="text/html"
         src="https://www.youtube.com/embed/IZfCj7tuZ-E?autoplay=1&controls=0&enablejsapi=1&fs=0&color=white&iv_load_policy=3"
         frameborder="0" allowfullscreen class="full-screen-video video-lg"></iframe>
@@ -256,7 +260,7 @@
     updateSize();
     $(window).resize(function () {
       if ($(window).width() <= 992) {
-      updateSize();
+        updateSize();
       }
     });
 
